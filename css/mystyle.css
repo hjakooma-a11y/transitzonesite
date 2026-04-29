@@ -1,4 +1,102 @@
 
+.tranzitzone-logo {
+  max-width: 100px;
+  width: 100%;
+}
+.transit-project {
+  background-color: #198754;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  border: solid #00CC99 2px;
+}
+.transit-project:hover {
+  background-color: #FFF;
+  border: solid #198754 2px;
+  color: #198754;
+}
+.offcanvas-header button{
+  background-color: #fff;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+.navbar-toggler, .bi-x-lg{
+  border: 0;
+  font-size: 2rem;
+}
+.navbar-toggler:focus, .bi-x-lg{
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: #666777;
+  font-weight: 600;
+  position: relative;
+}
+.nav-link:hover, .nav-link.active{
+  color: #154839;
+}
+
+@media (min-width: 991px) {
+  .nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #198754;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+
+  }
+  .nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+  }
+
+}
+.dropdown>.dropdown-menu li a:hover, .dropdown>.dropdown-menu li a.active{
+  background-color: #00CC99;
+  border-radius: 8px;
+}
+/* .dropdown>.dropdown-menu{
+    background-color: red;
+    border: 0;
+    border-radius:  0;
+}
+.bi-x-lg{
+  font-size: 2rem;
+}
+
+@media (min-width:992px) {
+    .dropdown>.dropdown-menu{
+      visibility: visible;
+      opacity: 0;
+      to: 100%;
+      display: block;
+      transition: all 0.1s ease-out;
+    }
+    .dropdown:hover>.dropdown-menu{
+        padding: 20px 0;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+    }
+}
+.dropdown-item:hover{
+  color: #FFF;
+  background-color: #000;
+} */
+
 
 .cairo-<uniquifier> {
   font-family: "Cairo", sans-serif;
