@@ -4,20 +4,19 @@
   width: 100%;
 }
 .transit-project {
-  background-color: #198754;
-  color: #fff;
+  color: #198754;
   font-weight: 600;
   font-size: 14px;
-  padding: 8px 20px;
+  padding: 6px 18px;
   border-radius: 8px;
   text-decoration: none;
   transition: all 0.3s ease-out;
-  border: solid #00CC99 2px;
+  border: solid #198754 2px;
 }
 .transit-project:hover {
-  background-color: #FFF;
+  background-color: #198754;
   border: solid #198754 2px;
-  color: #198754;
+  color: #fff;
 }
 .offcanvas-header button{
   background-color: #fff;
