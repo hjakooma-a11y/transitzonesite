@@ -12,138 +12,159 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/bootstrap.rtl.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
         <link href="css/mystyle.css" rel="stylesheet" />
 	      <link href="css/hover.css" rel="stylesheet" media="all">
 	      <link href="css/animate.css" rel="stylesheet" media="all">
     </head>
     <body class="d-flex flex-column">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm border-bottom py-4">
-                <div class="container-fluid px-5">
-                    <a class="navbar-brand"  href="index.html"><img class="img-fluid position-fixed" style="margin-top: -38px" width="108"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></a>
-                    <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link link-success fw-semibold" href="index.html">الرئيسية</a></li>
-                            <li class="nav-item"><a class="nav-link link-success fw-semibold" href="portfolio-overview.html">المشاريع</a></li>
-                            <li class="nav-item  link-success fw-semibold dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">الخدمات</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                    <li><a class="dropdown-item" href="service.html">محفظة الخدمات المتكاملة</a></li>
-                                        <li><a class="dropdown-item" href="disel-power.html">حلول الطاقة بالديزل</a></li>
-                                        <li><a class="dropdown-item" href="green-wall.html">الواجهات الخضرا</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link link-success fw-semibold" href="about.html">من نحن</a></li>
-                            <li class="nav-item"><a class="nav-link link-success fw-semibold active" href="contact.html">اتصل بنا</a></li>
-                        </ul>
-                    </div>
+      <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar bg-body-tertiary fixed-top navbar-expand-lg bg-opacity-75 border-bottom px-3">
+            <div class="container-fluid">
+              <a class="navbar-brand me-auto" href="index.html"><img class="tranzitzone-logo"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></a>
+
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header justify-content-between">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="tranzitzone-logo"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></h5>
+
+                  <button type="button" class="" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+
                 </div>
-            </nav>
-
-            <section class="py-5">
-              <div class="container-fluid my-5 px-5">
-                <div class="row gx-0 py-5">
-                  <div class="col-md-6 wow zoomInDown">
-                    <h1 class="display-4 fw-semibold lh-1 mb-4 hvr-buzz">تواصل معنا</h1>
-                    <p class="text-muted lead fs-4 mb-sm-5">دعنا نعمل معا، يسعدنا أن نسمع منك.</p>
-
-                    <div class="row py-5">
-                      <div class="col-md-6">
-                        <h3 class="fs-5">الهاتف متاح من 5AM الي 8PM</h3>
-                        <p class="mb-4 hvr-pulse-grow"><a href="tel:00966126644020" style="font-family: Arial !important" class="text-muted fs-6"><span class="bi bi-telephone-fill"></span> 00966-12-664-4020</a></p>
-
-                      </div>
-                      <div class="col-md-6">
-                        <h3 class="fs-5">البريد الإلكتروني</h3>
-                        <p class="mb-4 hvr-pulse-grow"><a href="mailto:info@tranzitzone.com.sa" class="text-muted fs-6"><span class="bi bi-envelope-at-fill"></span> info@transitzone.com.sa</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6  wow flipInX">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3710.1302282871393!2d39.16363527527202!3d21.58083918021027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDM0JzUxLjAiTiAzOcKwMDknNTguNCJF!5e0!3m2!1sen!2ssa!4v1777378665096!5m2!1sen!2ssa" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  <!-- <div class="custom-block custom-block-fully">
-                    <div class="quick-contact-item d-flex align-items-center mb-4 mt-4">
-                        <span class="bi bi-geo-alt-fill"></span>
-                        <address class="text fs-5">
-                         العنوان, جدة, المملكة العربيه السعوديه
-                        </address>
-                      </div>
-                      <div class="quick-contact-item d-flex align-items-center mb-4">
-                        <span class="hvr-buzz bi bi-telephone-fill"></span>
-                        <address class="text-right" lang="en">
-                          <a href="tel:00966126644020" style="font-family: Arial !important" class="btn btn-sm btn-outline-success border-0 fs-5 hvr-pulse-grow">00966-12-664-4020</a>
-
-                        </address>
-                      </div>
-                      <div class="quick-contact-item d-flex align-items-center mb-4">
-                        <span class="bi bi-envelope-at-fill"></span>
-                        <address class="text">
-                          <a href="mailto:info@tranzite.com" class="btn btn-sm btn-outline-success border-0 fs-5">info@transit.com</a>
-                        </address>
-                      </div>
-                  </div>
-                  </div> -->
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link mx-lg-2" aria-current="page" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link mx-lg-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        الخدمات
+                      </a>
+                      <ul class="dropdown-menu border-0 rounded-4 text-center shadow px-2 py-3">
+                        <li><a class="dropdown-item my-1" href="service.html">محفظة الخدمات المتكاملة</a></li>
+                        <li><a class="dropdown-item my-1" href="disel-power.html">حلول الطاقة بالديزل</a></li>
+                        <li>
+                        </li>
+                        <li><a class="dropdown-item my-1" href="green-wall.html">الواجهات الخضرا</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mx-lg-2" href="about.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mx-lg-2 active" href="contact.html">اتصل بنا</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-            </section>
-
-            <!-- Page content-->
-        </main>
-        <!-- Footer-->
-        <footer class="bg-light border-top py-4 mt-auto">
-            <div class="container-fluid px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-dark">Copyright &copy; Your TransitZone 2026</div></div>
-                    <div class="col-auto">
-                        <a class="link-success small" href="index.html">الرئيسية</a>
-                        <span class="text-dark mx-1">&middot;</span>
-                        <a class="link-success small" href="about.html">من نحن</a>
-                        <span class="text-dark mx-1">&middot;</span>
-                        <a class="link-success small fw-bold" href="contact.html">اتصل بنا</a>
-                        <span class="text-dark mx-1">&middot;</span>
-                        <a class="link-success small" href="portfolio-overview.html">المشاريع</a>
-                    </div>
-                </div>
+              <a class="transit-project ms-2 hvr-pulse" href="portfolio-overview.html">المشاريع</a>
+              <button class="navbar-toggler me-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+          </nav>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-          <script>
-            new WOW().init();
-          </script>
+        <section class="py-5">
+          <div class="container-fluid my-5 px-5">
+            <div class="row gx-0 py-5">
+              <div class="col-md-6 wow zoomInDown">
+                <h1 class="display-4 fw-semibold lh-1 mb-4 hvr-buzz">تواصل معنا</h1>
+                <p class="text-muted lead fs-4 mb-sm-5">دعنا نعمل معا، يسعدنا أن نسمع منك.</p>
+
+                <div class="row py-5">
+                  <div class="col-md-6">
+                    <h3 class="fs-5">الهاتف متاح من 5AM الي 8PM</h3>
+                    <p class="mb-4 hvr-pulse-grow"><a href="tel:00966126644020" style="font-family: Arial !important" class="text-muted fs-6"><span class="bi bi-telephone-fill"></span> 00966-12-664-4020</a></p>
+
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="fs-5">البريد الإلكتروني</h3>
+                    <p class="mb-4 hvr-pulse-grow"><a href="mailto:info@tranzitzone.com.sa" class="text-muted fs-6"><span class="bi bi-envelope-at-fill"></span> info@transitzone.com.sa</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6  wow flipInX">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3710.1302282871393!2d39.16363527527202!3d21.58083918021027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDM0JzUxLjAiTiAzOcKwMDknNTguNCJF!5e0!3m2!1sen!2ssa!4v1777378665096!5m2!1sen!2ssa" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <!-- <div class="custom-block custom-block-fully">
+                <div class="quick-contact-item d-flex align-items-center mb-4 mt-4">
+                    <span class="bi bi-geo-alt-fill"></span>
+                    <address class="text fs-5">
+                     العنوان, جدة, المملكة العربيه السعوديه
+                    </address>
+                  </div>
+                  <div class="quick-contact-item d-flex align-items-center mb-4">
+                    <span class="hvr-buzz bi bi-telephone-fill"></span>
+                    <address class="text-right" lang="en">
+                      <a href="tel:00966126644020" style="font-family: Arial !important" class="btn btn-sm btn-outline-success border-0 fs-5 hvr-pulse-grow">00966-12-664-4020</a>
+
+                    </address>
+                  </div>
+                  <div class="quick-contact-item d-flex align-items-center mb-4">
+                    <span class="bi bi-envelope-at-fill"></span>
+                    <address class="text">
+                      <a href="mailto:info@tranzite.com" class="btn btn-sm btn-outline-success border-0 fs-5">info@transit.com</a>
+                    </address>
+                  </div>
+              </div>
+              </div> -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Page content-->
+      </main>
+      <!-- Footer-->
+      <footer class="bg-light border-top py-4 mt-auto">
+          <div class="container-fluid px-5">
+              <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                  <div class="col-auto"><div class="small m-0 text-dark">Copyright &copy; Your TransitZone 2026</div></div>
+                  <div class="col-auto">
+                      <a class="link-success small" href="index.html">الرئيسية</a>
+                      <span class="text-dark mx-1">&middot;</span>
+                      <a class="link-success small" href="about.html">من نحن</a>
+                      <span class="text-dark mx-1">&middot;</span>
+                      <a class="link-success small fw-bold" href="contact.html">اتصل بنا</a>
+                      <span class="text-dark mx-1">&middot;</span>
+                      <a class="link-success small" href="portfolio-overview.html">المشاريع</a>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <!-- Bootstrap core JS-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
-			/**
-			 * Used to demonstrate Hover.css only. Not required when adding
-			 * Hover.css to your own pages. Prevents a link from being
-			 * navigated and gaining focus.
-			 */
-			var effects = document.querySelectorAll('.effects')[0];
+          new WOW().init();
+        </script>
+      <script>
+		/**
+		 * Used to demonstrate Hover.css only. Not required when adding
+		 * Hover.css to your own pages. Prevents a link from being
+		 * navigated and gaining focus.
+		 */
+		var effects = document.querySelectorAll('.effects')[0];
 
-			effects.addEventListener('click', function(e) {
+		effects.addEventListener('click', function(e) {
 
-				if (e.target.className.indexOf('hvr') > -1) {
-					e.preventDefault();
-					e.target.blur();
+			if (e.target.className.indexOf('hvr') > -1) {
+				e.preventDefault();
+				e.target.blur();
 
-				}
-			});
-		</script>
+			}
+		});
+	</script>
 
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^https:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^https:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-11991680-4', 'ianlunn.github.io');
-		  ga('send', 'pageview');
-		</script>
-    </body>
+	  ga('create', 'UA-11991680-4', 'ianlunn.github.io');
+	  ga('send', 'pageview');
+	</script>
+  </body>
 </html>

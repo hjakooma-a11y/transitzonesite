@@ -12,33 +12,54 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/bootstrap.rtl.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
         <link href="css/mystyle.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm border-bottom py-4">
-                <div class="container-fluid px-5">
-                    <a class="navbar-brand"  href="index.html"><img class="img-fluid position-fixed" style="margin-top: -38px" width="108"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></a>
-                    <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link link-success fw-semibold" href="index.html">الرئيسية</a></li>
-                            <li class="nav-item"><a class="nav-link link-success fw-semibold" href="portfolio-overview.html">المشاريع</a></li>
-                            <li class="nav-item  link-success fw-semibold dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">الخدمات</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                    <li><a class="dropdown-item" href="service.html">محفظة الخدمات المتكاملة</a></li>
-                                        <li><a class="dropdown-item" href="disel-power.html">حلول الطاقة بالديزل</a></li>
-                                        <li><a class="dropdown-item" href="green-wall.html">الواجهات الخضرا</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link link-success fw-semibold" href="about.html">من نحن</a></li>
-                            <li class="nav-item"><a class="nav-link link-success fw-semibold" href="contact.html">اتصل بنا</a></li>
+          <!-- Navigation-->
+            <nav class="navbar bg-body-tertiary fixed-top navbar-expand-lg bg-opacity-75 border-bottom px-3">
+              <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="index.html"><img class="tranzitzone-logo"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></a>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header justify-content-between">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="tranzitzone-logo"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></h5>
+
+                    <button type="button" class="" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link mx-lg-2" aria-current="page" href="index.html">الرئيسية</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link active mx-lg-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          الخدمات
+                        </a>
+                        <ul class="dropdown-menu border-0 rounded-4 text-center shadow px-2 py-3">
+                          <li><a class="dropdown-item my-1 active" href="service.html">محفظة الخدمات المتكاملة</a></li>
+                          <li><a class="dropdown-item my-1" href="disel-power.html">حلول الطاقة بالديزل</a></li>
+                          <li>
+                          </li>
+                          <li><a class="dropdown-item my-1" href="green-wall.html">الواجهات الخضرا</a></li>
                         </ul>
-                    </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="about.html">من نحن</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="contact.html">اتصل بنا</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+                <a class="transit-project ms-2 hvr-pulse" href="portfolio-overview.html">المشاريع</a>
+                <button class="navbar-toggler me-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
             </nav>
             <section class="py-5 mt-5">
               <div class="container px-4 py-5">
@@ -175,7 +196,7 @@
             </div>
         </footer>
         <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
