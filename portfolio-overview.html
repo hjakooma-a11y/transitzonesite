@@ -20,253 +20,243 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
-          <!-- Navigation-->
-            <nav class="navbar bg-body-tertiary fixed-top navbar-expand-lg bg-opacity-75 border-bottom px-3">
-              <div class="container-fluid">
-                <a class="navbar-brand me-auto" href="index.html"><img class="tranzitzone-logo ms-sm-3 ms-xs-5 ms-md-3 ms-lg-1"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></a>
+      <main class="flex-shrink-0">
+        <!-- Navigation-->
+              <nav class="navbar bg-body-tertiary fixed-top navbar-expand-lg bg-opacity-75 border-bottom">
+                <div class="container-fluid">
+                  <a class="navbar-brand me-auto" href="index.html"><img class="tranzitzone-logo ms-1"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></a>
 
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                  <div class="offcanvas-header justify-content-between">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="tranzitzone-logo"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></h5>
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header justify-content-between">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="tranzitzone-logo"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></h5>
 
-                    <button type="button" class="" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                      <button type="button" class="" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
 
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link  mx-lg-2 active" aria-current="page" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link  mx-lg-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            الخدمات
+                          </a>
+                          <ul class="dropdown-menu border-0 rounded-4 shadow px-2 py-3">
+                            <li><a class="dropdown-item my-1" href="service.html">محفظة الخدمات المتكاملة</a></li>
+                            <li><a class="dropdown-item my-1" href="disel-power.html">حلول الطاقة بالديزل</a></li>
+                            <li><a class="dropdown-item my-1" href="green-wall.html">الواجهات الخضرا</a></li>
+                            <li><a class="dropdown-item my-1" href="water.html">تنقية المياه والخدمات البيئية</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link mx-lg-2" href="about.html">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link mx-lg-2" href="contact.html">اتصل بنا</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                      <li class="nav-item">
-                        <a class="nav-link mx-lg-2" aria-current="page" href="index.html">الرئيسية</a>
+                  <a class="transit-project ms-2 hvr-pulse" href="portfolio-overview.html">المشاريع</a>
+                  <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+              </nav>
+
+          <section class="topics-section py-5 my-5 work-box">
+            <div class="container-fluid" id="portfolio">
+              <div class="row  gx-0">
+                <div class="col-lg-12">
+                  <div class="box-menu my-5">
+                    <ul>
+                      <li class="mixitup-control-active hvr-wobble-vertical" data-filter="*">
+                        كل المشاريع
                       </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link  mx-lg-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          الخدمات
-                        </a>
-                        <ul class="dropdown-menu border-0 rounded-4 text-center shadow px-2 py-3">
-                          <li><a class="dropdown-item my-1" href="service.html">محفظة الخدمات المتكاملة</a></li>
-                          <li><a class="dropdown-item my-1" href="disel-power.html">حلول الطاقة بالديزل</a></li>
-                          <li>
-                          </li>
-                          <li><a class="dropdown-item my-1" href="green-wall.html">الواجهات الخضرا</a></li>
-                        </ul>
+                      <li class="hvr-wobble-vertical" data-filter=".power">
+                        حلول الطاقة بالديزل
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="about.html">من نحن</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="contact.html">اتصل بنا</a>
+                      <li class="hvr-wobble-vertical" data-filter=".greewnwall">
+                        الحائط الاخضر
                       </li>
                     </ul>
                   </div>
                 </div>
-                <a class="transit-project ms-2 hvr-pulse" href="portfolio-overview.html">المشاريع</a>
-                <button class="navbar-toggler me-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
               </div>
-            </nav>
+              <div class="row gx-0 box-list">
 
-            <section class="topics-section pt-5 mt-5" id="portfolio">
-                  <div class="container-fluid px-5 pt-5">
-                    <div class="row gx-5">
-                        <div class="col-lg-12 col-12">
-                            <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.1s">
-                                <h4 class="section-title  fs-5 hvr-wobble-vertical">مشاريع منطقة العبور للتجارة</h4>
-                            </div>
-                        </div>
+                <!-- All -->
+                <div class="col-lg-3 col-md-6 px-1   mix mix-item">
+                  <div class="custom-block custom-block-full  mb-4"  >
+                      <a href="img/14.jpeg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
+                          <img src="img/14.jpeg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-6 mb-3">إسم المشروع</h3>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-1   mix mix-item">
+                  <div class="custom-block custom-block-full  mb-4" >
+                      <a href="img/p8.jpg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
+                          <img src="img/p8.jpg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-3 mb-3">إسم المشروع</h3>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-1   mix mix-item">
+                  <div class="custom-block custom-block-full  mb-4"  >
+                      <a href="img/p7.jpg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
+                          <img src="img/p7.jpg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-3 mb-3">إسم المشروع</h3>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-1   mix mix-item">
+                  <div class="custom-block custom-block-full  mb-4"  >
+                      <a href="img/p3.jpg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
+                          <img src="img/p3.jpg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-3 mb-3">إسم المشروع</h3>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-1   mix mix-item">
+                  <div class="custom-block custom-block-full  mb-4"  >
+                      <a href="img/p2.jpg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
+                          <img src="img/p2.jpg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-3 mb-3">إسم المشروع</h3>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-1   mix mix-item">
+                  <div class="custom-block custom-block-full  mb-4"  >
+                      <a href="img/p1.jpg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
+                          <img src="img/p1.jpg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-3 mb-3">إسم المشروع</h3>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-1   mix mix-item">
+                  <div class="custom-block custom-block-full  mb-4"  >
+                      <a href="img/p6.jpg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
+                          <img src="img/p6.jpg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-3 mb-3">إسم المشروع</h3>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-1   mix mix-item">
+                  <div class="custom-block custom-block-full  mb-4"  >
+                      <a href="img/p5.jpg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
+                          <img src="img/p5.jpg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-3 mb-3">إسم المشروع</h3>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-1   mix mix-item">
+                  <div class="custom-block custom-block-full  mb-4"  >
+                      <a href="img/p4.jpg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
+                          <img src="img/p4.jpg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-3 mb-3">إسم المشروع</h3>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-1   mix mix-item">
+                  <div class="custom-block custom-block-full  mb-4"  >
+                      <a href="img/p3.jpg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
+                          <img src="img/p3.jpg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-3 mb-3">إسم المشروع</h3>
+                      </div>
+                  </div>
+                </div>
 
-                        <div class="col-lg-3 col-md-6 px-1  hvr-bob ">
-                          <div class="custom-block custom-block-full wow bounceIn mb-4"  data-wow-delay="0.2s">
-                              <a href="img/14.jpeg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
-                                  <img src="img/14.jpeg" class="custom-block-image img-fluid" alt="">
-                              </a>
-                              <div class="custom-block-info">
-                                  <h3 class="fs-6 mb-3">إسم المشروع</h3>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 px-1  hvr-bob ">
-                          <div class="custom-block custom-block-full wow bounceIn mb-4" data-wow-delay="0.2s">
-                              <a href="img/p8.jpg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
-                                  <img src="img/p8.jpg" class="custom-block-image img-fluid" alt="">
-                              </a>
-                              <div class="custom-block-info">
-                                  <h3 class="fs-3 mb-3">إسم المشروع</h3>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 px-1  hvr-bob ">
-                          <div class="custom-block custom-block-full wow bounceIn mb-4"  data-wow-delay="0.2s">
-                              <a href="img/p7.jpg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
-                                  <img src="img/p7.jpg" class="custom-block-image img-fluid" alt="">
-                              </a>
-                              <div class="custom-block-info">
-                                  <h3 class="fs-3 mb-3">إسم المشروع</h3>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-5 col-md-6 px-1  hvr-bob ">
-                          <div class="custom-block custom-block-full wow bounceIn mb-4"  data-wow-delay="0.2s">
-                              <a href="img/p3.jpg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
-                                  <img src="img/p3.jpg" class="custom-block-image img-fluid" alt="">
-                              </a>
-                              <div class="custom-block-info">
-                                  <h3 class="fs-3 mb-3">إسم المشروع</h3>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 px-1  hvr-bob ">
-                          <div class="custom-block custom-block-full wow bounceIn mb-4"  data-wow-delay="0.2s">
-                              <a href="img/p2.jpg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
-                                  <img src="img/p2.jpg" class="custom-block-image img-fluid" alt="">
-                              </a>
-                              <div class="custom-block-info">
-                                  <h3 class="fs-3 mb-3">إسم المشروع</h3>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 px-1  hvr-bob ">
-                          <div class="custom-block custom-block-full wow bounceIn mb-4"  data-wow-delay="0.2s">
-                              <a href="img/p1.jpg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
-                                  <img src="img/p1.jpg" class="custom-block-image img-fluid" alt="">
-                              </a>
-                              <div class="custom-block-info">
-                                  <h3 class="fs-3 mb-3">إسم المشروع</h3>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 px-1  hvr-bob ">
-                          <div class="custom-block custom-block-full wow bounceIn mb-4"  data-wow-delay="0.2s">
-                              <a href="img/p6.jpg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
-                                  <img src="img/p6.jpg" class="custom-block-image img-fluid" alt="">
-                              </a>
-                              <div class="custom-block-info">
-                                  <h3 class="fs-3 mb-3">إسم المشروع</h3>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 px-1  hvr-bob ">
-                          <div class="custom-block custom-block-full wow bounceIn mb-4"  data-wow-delay="0.2s">
-                              <a href="img/p5.jpg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
-                                  <img src="img/p5.jpg" class="custom-block-image img-fluid" alt="">
-                              </a>
-                              <div class="custom-block-info">
-                                  <h3 class="fs-3 mb-3">إسم المشروع</h3>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 px-1  hvr-bob ">
-                          <div class="custom-block custom-block-full wow bounceIn mb-4"  data-wow-delay="0.2s">
-                              <a href="img/p4.jpg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
-                                  <img src="img/p4.jpg" class="custom-block-image img-fluid" alt="">
-                              </a>
-                              <div class="custom-block-info">
-                                  <h3 class="fs-3 mb-3">إسم المشروع</h3>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 px-1  hvr-bob ">
-                          <div class="custom-block custom-block-full wow bounceIn mb-4"  data-wow-delay="0.2s">
-                              <a href="img/p3.jpg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
-                                  <img src="img/p3.jpg" class="custom-block-image img-fluid" alt="">
-                              </a>
-                              <div class="custom-block-info">
-                                  <h3 class="fs-3 mb-3">إسم المشروع</h3>
-                              </div>
-                          </div>
+                <!-- TRANSIT ZONE DISEL POWER SOLUTIONS -->
+                <div class="col-lg-3 col-md-6 px-1 mix mix-item power">
+                  <div class="custom-block custom-block-full  text-center" >
+                      <a href="img/11.jpeg" class="portfolio-box custom-block-image-wrap" title="اسم المشروع">
+                          <img src="img/11.jpeg" class="custom-block-image img-fluid" alt="">
+                      </a>
+
+                      <div class="custom-block-info">
+                          <h3 class="fs-5 mb-2">اسم المشروع</h3>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-1 mix mix-item power">
+                  <div class="custom-block custom-block-full  text-center" >
+                      <a href="img/12.jpeg" class="custom-block-image-wrap portfolio-box" title="اسم المشروع">
+                          <img src="img/12.jpeg" class="custom-block-image img-fluid" alt="">
+                      </a>
+
+                      <div class="custom-block-info">
+                          <h3 class="fs-5 mb-2">اسم المشروع</h3>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-1 mix mix-item power">
+                    <div class="custom-block custom-block-full  text-center" >
+                        <a href="img/13.jpeg" class="custom-block-image-wrap portfolio-box" title="اسم المشروع">
+                            <img src="img/13.jpeg" class="custom-block-image img-fluid" alt="">
+                        </a>
+
+                        <div class="custom-block-info">
+                            <h3 class="fs-5 mb-2">اسم المشروع</h3>
                         </div>
                     </div>
                 </div>
-            </section> data-wow-delay="0.3s"
+                <div class="col-lg-3 col-md-6 px-1 mix mix-item power">
+                  <div class="custom-block custom-block-full  text-center">
+                      <a href="img/15.jpeg" class="portfolio-box custom-block-image-wrap " title="اسم المشروع">
+                          <img src="img/15.jpeg" class="custom-block-image img-fluid" alt="">
+                      </a>
 
-            <section class="topics-section pt-5 mt-5"  id="portfolio">
-              <div class="container-fluid px-5">
-                <div class="row gx-5">
-                    <div class="col-lg-12 col-12">
-                        <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.1s">
-                            <h4 class="section-title  hvr-wobble-vertical fs-5">مشاريع - TRANSIT ZONE DISEL POWER SOLUTIONS</h4>
-                        </div>
-                    </div>
-
-                    <div class="col mb-3 px-1  hvr-bob">
-                        <div class="custom-block custom-block-overlay wow bounceIn text-center" data-wow-delay="0.2s">
-                            <a href="img/11.jpeg" class="custom-block-image-wrap portfolio-box" title="اسم المشروع">
-                                <img src="img/11.jpeg" class="custom-block-image img-fluid" alt="">
-                            </a>
-
-                            <div class="custom-block-info custom-block-overlay-info">
-                                <h3 class="fs-5 mb-2">اسم المشروع</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-3 px-1  hvr-bob">
-                        <div class="custom-block custom-block-overlay wow bounceIn text-center" data-wow-delay="0.2s">
-                            <a href="img/12.jpeg" class="custom-block-image-wrap portfolio-box" title="اسم المشروع">
-                                <img src="img/12.jpeg" class="custom-block-image img-fluid" alt="">
-                            </a>
-
-                            <div class="custom-block-info custom-block-overlay-info">
-                                <h3 class="fs-5 mb-2">اسم المشروع</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-3 px-1  hvr-bob">
-                        <div class="custom-block custom-block-overlay wow bounceIn text-center" data-wow-delay="0.2s">
-                            <a href="img/13.jpeg" class="custom-block-image-wrap portfolio-box" title="اسم المشروع">
-                                <img src="img/13.jpeg" class="custom-block-image img-fluid" alt="">
-                            </a>
-
-                            <div class="custom-block-info custom-block-overlay-info">
-                                <h3 class="fs-5 mb-2">اسم المشروع</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-3 px-1  hvr-bob">
-                        <div class="custom-block custom-block-overlay wow bounceIn text-center">
-                            <a href="img/15.jpeg" class="portfolio-box custom-block-image-wrap " title="اسم المشروع">
-                                <img src="img/15.jpeg" class="custom-block-image img-fluid" alt="">
-                            </a>
-
-                            <div class="custom-block-info custom-block-overlay-info">
-                                <h3 class="fs-5 mb-2">اسم المشروع</h3>
-                            </div>
-                        </div>
-                    </div>
-
+                      <div class="custom-block-info">
+                          <h3 class="fs-5 mb-2">اسم المشروع</h3>
+                      </div>
+                  </div>
                 </div>
-              </div>
-            </section>
 
-            <section class="topics-section pt-5 mt-5"  id="portfolio">
-              <div class="container-fluid px-5">
-                <div class="row gx-5">
-                    <div class="col-lg-12 col-12">
-                        <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.1s">
-                            <h4 class="section-title  hvr-wobble-vertical fs-5">مشاريع - TRANSIT ZONE GREENWALL ARABIC</h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 px-1  hvr-bob ">
-                      <div class="custom-block custom-block-full wow bounceIn mb-4  data-wow-delay="0.2s"">
-                          <a href="img/16.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
-                              <img src="img/16.jpeg" class="custom-block-image img-fluid" alt="">
-                          </a>
-                          <div class="custom-block-info">
-                              <h3 class="fs-6 mb-3">إسم المشروع</h3>
-                          </div>
+                <!-- All -->
+                <div class="col-lg-3 col-md-6 px-1 mix mix-item">
+                  <div class="custom-block custom-block-full  mb-4  ">
+                      <a href="img/16.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
+                          <img src="img/16.jpeg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-6 mb-3">إسم المشروع</h3>
                       </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 px-1  hvr-bob ">
-                      <div class="custom-block custom-block-full wow bounceIn mb-4" data-wow-delay="0.2s">
-                          <a href="img/17.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
-                              <img src="img/17.jpeg" class="custom-block-image img-fluid" alt="">
-                          </a>
-                          <div class="custom-block-info">
-                              <h3 class="fs-6 mb-3">إسم المشروع</h3>
-                          </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-1 mix mix-item">
+                  <div class="custom-block custom-block-full  mb-4" >
+                      <a href="img/17.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
+                          <img src="img/17.jpeg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-6 mb-3">إسم المشروع</h3>
                       </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 px-1  hvr-bob ">
-                      <div class="custom-block custom-block-full wow bounceIn mb-4" data-wow-delay="0.2s">
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-1 mix mix-item">
+                      <div class="custom-block custom-block-full  mb-4" >
                           <a href="img/18.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
                               <img src="img/18.jpeg" class="custom-block-image img-fluid" alt="">
                           </a>
@@ -275,104 +265,98 @@
                           </div>
                       </div>
                     </div>
-                </div>
-              </div>
-            </section>
 
+                  <!-- TRANSIT ZONE GREENWALL ARABIC -->
 
-            <section class="topics-section pt-5 mt-5" id="portfolio">
-              <div class="container-fluid px-5">
-                <div class="row gx-5">
-                    <div class="col-lg-12 col-12">
-                        <div class="section-title-wrap mb-5 wow rubberBand"  data-wow-delay="0.1s">
-                            <h4 class="section-title  hvr-wobble-vertical fs-5 ">مشاريع - الواجهات الخضرا</h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 px-1  hvr-bob ">
-                      <div class="custom-block custom-block-full wow bounceIn mb-4 "  data-wow-delay="0.2s">
-                          <a href="img/21.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
-                              <img src="img/21.jpeg" class="custom-block-image img-fluid" alt="">
-                          </a>
-                          <div class="custom-block-info">
-                              <h3 class="fs-6 mb-3">إسم المشروع</h3>
-                          </div>
+                <!-- Green Waall -->
+                <div class="col-lg-3 col-md-6 px-1 mix mix-item greewnwall">
+                  <div class="custom-block custom-block-full  mb-4 "  >
+                      <a href="img/21.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
+                          <img src="img/21.jpeg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-6 mb-3">إسم المشروع</h3>
                       </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 px-1  hvr-bob ">
-                      <div class="custom-block custom-block-full wow bounceIn mb-4"  data-wow-delay="0.2s">
-                          <a href="img/20.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
-                              <img src="img/20.jpeg" class="custom-block-image img-fluid" alt="">
-                          </a>
-                          <div class="custom-block-info">
-                              <h3 class="fs-6 mb-3">إسم المشروع</h3>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-8 col-md-6 px-1  hvr-bob ">
-                      <div class="custom-block custom-block-full wow bounceIn mb-4"  data-wow-delay="0.2s">
-                          <a href="img/23.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
-                              <img src="img/23.jpeg" class="custom-block-image img-fluid" alt="">
-                          </a>
-                          <div class="custom-block-info">
-                              <h3 class="fs-6 mb-3">إسم المشروع</h3>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 px-1  hvr-bob ">
-                      <div class="custom-block custom-block-full wow bounceIn mb-4"  data-wow-delay="0.2s">
-                          <a href="img/24.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
-                              <img src="img/24.jpeg" class="custom-block-image img-fluid" alt="">
-                          </a>
-                          <div class="custom-block-info">
-                              <h3 class="fs-6 mb-3">إسم المشروع</h3>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 px-1  hvr-bob ">
-                      <div class="custom-block custom-block-full wow bounceIn mb-4"  data-wow-delay="0.2s">
-                          <a href="img/25.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
-                              <img src="img/25.jpeg" class="custom-block-image img-fluid" alt="">
-                          </a>
-                          <div class="custom-block-info">
-                              <h3 class="fs-6 mb-3">إسم المشروع</h3>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 px-1  hvr-bob ">
-                      <div class="custom-block custom-block-full wow bounceIn mb-4"  data-wow-delay="0.2s">
-                          <a href="img/20.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
-                              <img src="img/20.jpeg" class="custom-block-image img-fluid" alt="">
-                          </a>
-                          <div class="custom-block-info">
-                              <h3 class="fs-6 mb-3">إسم المشروع</h3>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 px-1  hvr-bob ">
-                      <div class="custom-block custom-block-full wow bounceIn mb-4"  data-wow-delay="0.2s">
-                          <a href="img/22.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
-                              <img src="img/22.jpeg" class="custom-block-image img-fluid" alt="">
-                          </a>
-                          <div class="custom-block-info">
-                              <h3 class="fs-6 mb-3">إسم المشروع</h3>
-                          </div>
-                      </div>
-                    </div>
-                </div>
-              </div>
-            </section>
-
-            <section class="py-5 bg-light wow fadeInUp"  data-wow-delay="0.1s">
-                <div class="container px-5 my-5">
-                  <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h3 class="display-5 fw-bolder mb-4 wow fadeInUp"  data-wow-delay="0.4s">هيا نبني شيئاً معاً</h3>
-                        <a class="btn btn-lg mt-4 btn-outline-success wow fadeInUp"  data-wow-delay="0.6s" href="contact.html">اتصل بنا</a>
-                    </div>
                   </div>
                 </div>
-            </section>
-        </main>
+                <div class="col-lg-3 col-md-6 px-1 mix mix-item greewnwall">
+                  <div class="custom-block custom-block-full  mb-4"  >
+                      <a href="img/20.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
+                          <img src="img/20.jpeg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-6 mb-3">إسم المشروع</h3>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-1 mix mix-item greewnwall">
+                  <div class="custom-block custom-block-full  mb-4"  >
+                      <a href="img/23.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
+                          <img src="img/23.jpeg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-6 mb-3">إسم المشروع</h3>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-1 mix mix-item greewnwall">
+                  <div class="custom-block custom-block-full  mb-4"  >
+                      <a href="img/24.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
+                          <img src="img/24.jpeg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-6 mb-3">إسم المشروع</h3>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-1 mix mix-item greewnwall">
+                  <div class="custom-block custom-block-full  mb-4"  >
+                      <a href="img/25.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
+                          <img src="img/25.jpeg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-6 mb-3">إسم المشروع</h3>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-1 mix mix-item greewnwall">
+                  <div class="custom-block custom-block-full  mb-4"  >
+                      <a href="img/20.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
+                          <img src="img/20.jpeg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-6 mb-3">إسم المشروع</h3>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-1 mix mix-item greewnwall">
+                  <div class="custom-block custom-block-full  mb-4"  >
+                      <a href="img/22.jpeg"  title="اسم المشروع" class="portfolio-box custom-block-image-wrap">
+                          <img src="img/22.jpeg" class="custom-block-image img-fluid" alt="">
+                      </a>
+                      <div class="custom-block-info">
+                          <h3 class="fs-6 mb-3">إسم المشروع</h3>
+                      </div>
+                  </div>
+                </div>
+
+
+            </div>
+          </div>
+        </section>
+
+
+        <section class="py-5 bg-light">
+          <div class="container px-5 my-5">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                  <h3 class="display-5 fw-bolder mb-4 wow fadeInUp"  data-wow-delay="0.4s">هيا نبني شيئاً معاً</h3>
+                  <a class="btn btn-lg mt-4 btn-outline-success wow fadeInUp"  data-wow-delay="0.6s" href="contact.html">اتصل بنا</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
         <!-- Footer-->
         <footer class="bg-light border-top py-4 mt-auto">
             <div class="container-fluid px-5">
@@ -394,42 +378,47 @@
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-        <script src="assets/js/scripts.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+         <script src="assets/js/scripts.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+           <script>
+             new WOW().init();
+           </script>
 
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+           <script>
+             $(document).ready(function(){ var mixer = mixitup('.box-list'); })
+           </script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-          <script>
-            new WOW().init();
-          </script>
-        <script>
-			/**
-			 * Used to demonstrate Hover.css only. Not required when adding
-			 * Hover.css to your own pages. Prevents a link from being
-			 * navigated and gaining focus.
-			 */
-			var effects = document.querySelectorAll('.effects')[0];
+         <script>
+   			/**
+   			 * Used to demonstrate Hover.css only. Not required when adding
+   			 * Hover.css to your own pages. Prevents a link from being
+   			 * navigated and gaining focus.
+   			 */
+   			var effects = document.querySelectorAll('.effects')[0];
 
-			effects.addEventListener('click', function(e) {
+   			effects.addEventListener('click', function(e) {
 
-				if (e.target.className.indexOf('hvr') > -1) {
-					e.preventDefault();
-					e.target.blur();
+   				if (e.target.className.indexOf('hvr') > -1) {
+   					e.preventDefault();
+   					e.target.blur();
 
-				}
-			});
-		</script>
+   				}
+   			});
+   		</script>
 
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^https:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+   		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^https:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+   		<script>
+   		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-11991680-4', 'ianlunn.github.io');
-		  ga('send', 'pageview');
-		</script>
+   		  ga('create', 'UA-11991680-4', 'ianlunn.github.io');
+   		  ga('send', 'pageview');
+   		</script>
     </body>
 </html>
