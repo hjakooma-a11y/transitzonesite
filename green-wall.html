@@ -19,54 +19,61 @@
 	      <link href="css/animate.css" rel="stylesheet" media="all">
     </head>
     <body class="d-flex flex-column h-100">
+
+      <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+          <div class="spinner-border text-success" role="status" style="width: 3rem; height: 3rem;"></div>
+      </div>
+
       <main class="flex-shrink-0">
       <!-- Navigation-->
-        <nav class="navbar bg-body-tertiary fixed-top navbar-expand-lg bg-opacity-75 border-bottom">
-          <div class="container-fluid">
-            <a class="navbar-brand me-auto" href="index.html"><img class="tranzitzone-logo ms-1"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></a>
 
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header justify-content-between">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="tranzitzone-logo"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></h5>
+      <nav class="navbar bg-white fixed-top navbar-expand-lg border-bottom border m-3 rounded-4 shadow-sm">
+        <div class="container">
+          <a class="navbar-brand me-auto" href="index.html"><img class="tranzitzone-logo ms-1"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></a>
 
-                <button type="button" class="" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header justify-content-between">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="tranzitzone-logo"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></h5>
 
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link mx-lg-2" aria-current="page" href="index.html">الرئيسية</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link active mx-lg-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      الخدمات
-                    </a>
-                    <ul class="dropdown-menu border-0 rounded-4 shadow px-2 py-3">
-                      <li><a class="dropdown-item my-1" href="service.html">محفظة الخدمات المتكاملة</a></li>
-                      <li><a class="dropdown-item my-1" href="disel-power.html">حلول الطاقة بالديزل</a></li>
-                      <li><a class="dropdown-item my-1 active" href="green-wall.html">الواجهات الخضرا</a></li>
-                      <li><a class="dropdown-item my-1" href="water.html">تنقية المياه والخدمات البيئية</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="about.html">من نحن</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="contact.html">اتصل بنا</a>
-                  </li>
-                </ul>
-              </div>
+              <button type="button" class="" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+
             </div>
-            <a class="transit-project ms-2 hvr-pulse" href="portfolio-overview.html">المشاريع</a>
-            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" aria-current="page" href="index.html">الرئيسية</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active mx-lg-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    الخدمات
+                  </a>
+                  <ul class="dropdown-menu border-0 rounded-4 shadow px-2 py-3">
+                    <li><a class="dropdown-item my-1" href="service.html">محفظة الخدمات المتكاملة</a></li>
+                    <li><a class="dropdown-item my-1" href="disel-power.html">حلول الطاقة بالديزل</a></li>
+                    <li><a class="dropdown-item my-1 active" href="green-wall.html">الواجهات الخضرا</a></li>
+                    <li><a class="dropdown-item my-1" href="water.html">تنقية المياه والخدمات البيئية</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="about.html">من نحن</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="contact.html">اتصل بنا</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </nav>
+          <a class="transit-project ms-2 rounded-5" href="portfolio-overview.html">المشاريع</a>
+          <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
 
-          <header class="pt-5">
+          <header class="pt-5" style="background: #154839;
+  background: linear-gradient(270deg,rgba(21, 72, 57, 1) 0%, rgba(253, 187, 45, 1) 100%);">
             <div class="container-fluid px-0 mt-5">
-                <div class="row gx-0 px-4 bg-dark align-items-center py-3">
+                <div class="row gx-5 px-4 align-items-center py-5">
                     <div class="col-lg-6 col-md-6 col-xl-6 col-xxl-6">
                         <div class="my-5">
                             <div class="ps-0 badge text-white text-right wow fadeInUp" data-wow-delay="0.1s">
@@ -74,13 +81,15 @@
                                   .Transit Zone Trading Co
                                 </div>
                             </div>
-                            <h1 class="display-5 fw-semibold text-white mb-3 wow fadeInUp" data-wow-delay="0.2s">الواجهات <span class="text-success">الخضراء</span></h1>
-                            <p class="text-white-50 wow fadeInUp" data-wow-delay="0.4s">الواجهات الخضراء هي حل مبتكر يقوم علي تغطية الأسطح العمودية بالنباتات. وتظهر أداًء ممتاًزا في المباني العامة مثل محطات القطار، والمكاتب الحكومية, والمستشفيات. تعمل الجدران الخضراء علي تحسين جودة الهواء, وتقليل الضوضاء، وتوفير عزل حراري طبيعي، مما ينعكس علي خفض تكاليف الطاقة. كما أنها تحدث تأثير مهدئا يعزز من رفاهية المستخدمين, ويسهم في تعزيز القيم البيئية.</p>
+                            <h1 class="display-5 fw-semibold text-white mb-3 wow fadeInUp" data-wow-delay="0.2s">الواجهات <span style="color: #FDBB2D">الخضراء</span></h1>
+                            <p class="text-white wow fadeInUp" data-wow-delay="0.4s">الواجهات الخضراء هي حل مبتكر يقوم علي تغطية الأسطح العمودية بالنباتات. وتظهر أداًء ممتاًزا في المباني العامة مثل محطات القطار، والمكاتب الحكومية, والمستشفيات. تعمل الجدران الخضراء علي تحسين جودة الهواء, وتقليل الضوضاء، وتوفير عزل حراري طبيعي، مما ينعكس علي خفض تكاليف الطاقة. كما أنها تحدث تأثير مهدئا يعزز من رفاهية المستخدمين, ويسهم في تعزيز القيم البيئية.</p>
                         </div>
                     </div>
                     <div class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 text-center wow fadeInUp" data-wow-delay="0.2s">
-                      <div class="custom-block custom-block-full my-5">
-                        <img class="img-fluid custom-block-image rounded-3" src="img/22.jpeg" alt="...">
+                      <div class="custom-block custom-block-full bg-light my-5">
+                        <div class="custom-block custom-block-full bg-light mb-4">
+                          <img class="img-fluid custom-block-image rounded-3" src="img/22.jpeg" alt="...">
+                        </div>
                       </div>
                     </div>
                 </div>
@@ -104,45 +113,45 @@
           <div class="container-fluid px-5 my-5">
             <div class="row gx-5">
               <div class="col-lg-12 col-12">
-                <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.2s">
-                    <h2 class="section-title hvr-wobble-vertical">كيف يتم إنتاجه</h2>
+                <div class="section-title-wrap mb-5 wow flipInX" data-wow-delay="0.2s">
+                    <h2 class="section-title hvr-wobble-vertical h4">كيف يتم إنتاجه</h2>
                 </div>
               </div>
             </div>
               <div class="row gx-5">
                 <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                  <h4 class="mb-3">التقنية</h4>
+                  <h4 class="text-success mb-3">التقنية</h4>
                   <p class="text-muted">تعد Wall Green حلا مبتكرا في مجال البناء المستدام، حيث يتيح إنشاء واجهات خضراء حّية. يعتمد النظام علي وحدات معيارية مصنوعة من الفولاذ المقاوم للصدأ مع طبقة داخلية من صوف الصخور (Rockwool)، مما يضمن المتانة والكفاءة، إضاف الي السلامة من الحرائق.</p>
                   <p class="text-muted">يمثل هذا الموديل مزيجا ذكًيا من المتانة والكفاءة والجماليات. وقد ُصّمم مع مراعاة الاستدامة وراحة المستخدم، ليقدم أداًء طويل الأمد بينما يعزز المظهر الجمالي لأي مساحة. وفيما يلي تجد الميزات الرئيسية لمنتجنا.</p>
                 </div>
                 <div class="col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                  <h4 class="mb-3">الأبعاد والتكوين</h4>
+                  <h4 class="text-success mb-3">الأبعاد والتكوين</h4>
                   <p class="text-muted">يبلغ عرض الوحدة الواحدة 25 سم وارتفاعها 50 سم، مما يتيح تصميم جدران مرنة بمختلف الأحجام والأشكال. يمكن دمج الوحدات وتنسيقها بحرية لتناسب أي أبعاد مطلوبة، مما يمنح المعماريين والمصممين حرية كاملة في ابتكار واجهات مميزة . حتوي كل متر مربع من النظام علي 64 نبتة، مما يضمن سطحا أخضر كثيًفا وجذاًبا بصريا  بلغ وزن النظام المعياري عند التشّبع الكامل حوالي 60 كجم/م</p>
                 </div>
               </div>
           </div>
         </section>
 
-        <section class="py-5 bg-light">
+        <section class="py-5 bg-dark">
           <div class="container-fluid px-5 my-5">
             <div class="row gx-5">
               <div class="col-lg-12 col-12">
-                <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.2s">
-                    <h2 class="section-title hvr-wobble-vertical">مواد البناء</h2>
+                <div class="section-title-wrap mb-5 wow flipInX" data-wow-delay="0.2s">
+                    <h2 class="section-title hvr-wobble-vertical h4">مواد البناء</h2>
                 </div>
               </div>
             </div>
             <div class="row gx-5 align-items-center mb-5">
               <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="custom-block custom-block-full mb-5">
-                  <img class="img-fluid custom-block-image rounded-3 mb-5 mb-lg-0" src="img/25.jpeg" alt="...">
+                <div class="custom-block custom-block-full bg-light mb-5">
+                  <img class="img-fluid custom-block-image rounded-3 mb-5 h-100 mb-lg-0" src="img/19.jpeg" alt="...">
                 </div>
               </div>
               <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-                  <h4 class="">الفوالذ المقاوم للصدأ</h4>
-                  <p class="text-muted mb-5">يوفر هذا النوع من الستانلس ستيل مقاومة استثنائية للتآكل، وهو عامل أساسي لضمان طول عمر النظام. كما ُيقدر الفوالذ الأوستنيتي لقوته ومتانته العالية، مما يجعله خياًرا مثالًيا للتطبيقات الخارجية.</p>
-                  <h4 class="">طبقة صوف الصخور(Rockwool)</h4>
-                  <p class="text-muted mb-5">باعتباره وسًطا للنمو، يوفر صوف الصخور ظروفا لنمو النباتات بشكل صحي. فهو يدعم النمو األمثل للجذور ويحافظ عىل توازن الرطوبة المناسب، مع السماح بمرور الهواء بشكل فّعال — وهو عامل أساسي للحفاظ عىل حيوية واستدامة الجدران الخضراء.</p>
+                  <h4 class="text-success">الفوالذ المقاوم للصدأ</h4>
+                  <p class="text-white-50 mb-5">يوفر هذا النوع من الستانلس ستيل مقاومة استثنائية للتآكل، وهو عامل أساسي لضمان طول عمر النظام. كما ُيقدر الفوالذ الأوستنيتي لقوته ومتانته العالية، مما يجعله خياًرا مثالًيا للتطبيقات الخارجية.</p>
+                  <h4 class="text-success">طبقة صوف الصخور(Rockwool)</h4>
+                  <p class="text-white-50 mb-5">باعتباره وسًطا للنمو، يوفر صوف الصخور ظروفا لنمو النباتات بشكل صحي. فهو يدعم النمو األمثل للجذور ويحافظ عىل توازن الرطوبة المناسب، مع السماح بمرور الهواء بشكل فّعال — وهو عامل أساسي للحفاظ عىل حيوية واستدامة الجدران الخضراء.</p>
               </div>
             </div>
             </div>
@@ -150,21 +159,21 @@
 
           <section class="py-5">
             <div class="container-fluid px-5 my-5">
-              <div class="row gx-5">
+              <div class="row gx-5 ">
                 <div class="col-lg-12 col-12">
-                  <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.2s">
-                      <h2 class="section-title hvr-wobble-vertical">البناء والتركيب</h2>
+                  <div class="section-title-wrap mb-5 wow flipInX" data-wow-delay="0.2s">
+                      <h2 class="section-title hvr-wobble-vertical h4">البناء والتركيب</h2>
                   </div>
                 </div>
               </div>
-              <div class="row gx-5 mt-5 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-lg-6 order-first order-lg-last">
-                  <div class="custom-block custom-block-full mb-5">
-                    <img class="img-fluid custom-block-image rounded mb-5 mb-lg-0" src="img/25.jpeg" alt="...">
+              <div class="row gx-5 mt-5 align-items-center">
+                <div class="col-lg-6 order-first order-lg-last wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="custom-block custom-block-full bg-light mb-5">
+                    <img class="img-fluid custom-block-image rounded h-100  mb-5 mb-lg-0" src="img/21.jpeg" alt="...">
                   </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                  <h4 class="mb-3">نظام الواجهات المعيارية Green Wall </h4>
+                  <h4 class="text-success mb-3">نظام الواجهات المعيارية Green Wall </h4>
                   <p class="text-muted mb-3">يجمع نظام الواجهات المعيارية Wall Green بين التقنيات المبتكرة وسهولة التجميع، مما يضمن المتانة والوظيفية لكل مكّون. ولتركيب نظام الواجهة الخضراء العمودية، نعتمد علي تقنيات مثبتة في مجال الواجهات الُمهّواة.</p>
                   <p class="text-muted mb-3"><strong class="text-success">التركيب</strong> تتكون البنية من حوامل تحميل ومقاومة للرياح، اضافه الي بروفيلات رأسية  وبروفيالت أفقية علي شكل Z.</p>
                   <p class="text-muted mb-3">يتم تثبيت الحوامل باستخدام مسامير كيميائية أو ميكانيكية، وذلك حسب نوع سطح الجدار الداعم. بعد ذلك، يتم تثبيت النظام المعياري علي  بروفيلات الـ Z باستخدام براغي ذاتية الثقب. يراعي التصميم جميع األحمال المحتملة، بما في ذلك وزن النباتات والركيزة (Substrate) والمياه المحتجزة، لضمان المتانة والسالمة.</p>
@@ -178,23 +187,23 @@
             <div class="container-fluid px-5 my-5">
               <div class="row gx-5">
                 <div class="col-lg-6">
-                  <div class="section-title-wrap mb-5 wow rubberBand"  data-wow-delay="0.2s">
-                      <h2 class="section-title hvr-wobble-vertical">لزراعة والتصميم</h2>
+                  <div class="section-title-wrap mb-5 wow flipInX"  data-wow-delay="0.2s">
+                      <h2 class="section-title hvr-wobble-vertical h4 h4">الزراعة والتصميم</h2>
                   </div>
                   <div class="wow fadeInUp" data-wow-delay="0.3s">
-                    <h4 class="mb-3">الزراعة</h4>
+                    <h4 class="text-success mb-3">الزراعة</h4>
                     <p class="text-muted">قبل تركيب الوحدات علي المبنى، يعد من الممارسات الجيدة زراعة الوحدات مسبًقا في المشتل. خلال هذه المرحلة، تمنح النباتات فرصة لتأسيس نظام جذري قوي والتكّيف مع ظروف النمو العمودي.</p>
                     <p class="text-muted">يساهم هذا األسلوب في تقليل مخاطر فقدان النباتات بعد التركيب، ويضمن أن تكون الواجهة الخضراء صحية  وكثيفة وجذابة بصريا منذ البداية. وعلي الرغم من أن هذه الخطوة ليست إلزامية، إلا أنها تعد أفضل ممارسة موصى بها لضمان الأداء واالعتمادية علي المدى الطويل.</p>
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.2s">
-                      <h2 class="section-title hvr-wobble-vertical">عملية التصميم</h2>
+                  <div class="section-title-wrap mb-5 wow flipInX" data-wow-delay="0.2s">
+                      <h2 class="section-title hvr-wobble-vertical h4 ا4">عملية التصميم</h2>
                   </div>
                   <div class="wow fadeInUp" data-wow-delay="0.2s">
-                    <h4 class="mb-3">اختيار الموقع</h4>
+                    <h4 class="text-success mb-3">اختيار الموقع</h4>
                     <p class="text-muted">عند اختيار موقع للجدار األخضر، من المهم مراعاة الترض ألشعة الشمس، مناطق الظل، والظروف المناخية المحلية. يجب تكييف النظام مع البيئة المحددة للموقع المختار لضمان أفضل ظروف لنمو النباتات.</p>
-                    <h4 class="mb-3">اختيار النباتات</h4>
+                    <h4 class="text-success mb-3">اختيار النباتات</h4>
                     <p class="text-muted">يعد اختيار الأنواع النباتية المناسبة لظروف الإضاءة والرطوبة ودرجات الحرارة في موقع التركيب عاملا أساسيا. من المهم ضمان تنوع الأنواع لدعم التنوع الحيوي مع الحفاظ علي مظهر جمالي جّذاب طوال العام. يجب أن تكون النباتات متكّيفة جيًدا مع المناخ المحلي. تهدف تصاميمنا الي توفير جمال بصري عىل مدار السنة عبر دمج نباتات دائمة الخضرة تحافظ عىل جاذبية الواجهة في جميع الفصول.</p>
                   </div>
                 </div>
@@ -206,31 +215,31 @@
             <div class="container-fluid px-5 my-5">
               <div class="row gx-5">
                 <div class="col-lg-4">
-                  <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.2s">
-                      <h3 class="section-title hvr-wobble-vertical">السلامة من الحرائق</h3>
+                  <div class="section-title-wrap mb-5 wow flipInX" data-wow-delay="0.2s">
+                      <h2 class="section-title hvr-wobble-vertical h4">السلامة من الحرائق</h2>
                   </div>
                   <div class="wow fadeInUp" data-wow-delay="0.2s">
-                  <h4 class="mb-3">الزراعة</h4>
+                  <h4 class="text-success  mb-3">الزراعة</h4>
                   <p class="text-muted">تم تصميم نظام الجدار الأخضر المعياري لدينا واختباره مع مراعاة السلامة من الحرائق. وتستوفي المواد المستخدمة، بما في ذلك الهيكل الداعم والركيزة، معايير مقاومة الحريق الصارمة المطلوبة للتطبيقات الإنشائية. وبفضل اعتماده وفقا للمعايير الأوروبية ذات الصلة، يوفر للمهندسين المعماريين والمستثمرين ضمان الامتثال والسلامة والمتانة.</p>
                   </div>
                 </div>
                 <div class="col-lg-4">
-                  <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.2s">
-                      <h3 class="section-title hvr-wobble-vertical">عملية التصميم</h3>
+                  <div class="section-title-wrap mb-5 wow flipInX" data-wow-delay="0.2s">
+                      <h2 class="section-title hvr-wobble-vertical h4">عملية التصميم</h2>
                   </div>
-                  <div class="wow fadeInDown" data-wow-delay="0.2s">
-                    <h4 class="mb-3">نظام الري</h4>
+                  <div class="wow fadeInUp" data-wow-delay="0.3s">
+                    <h4 class="text-success  mb-3">نظام الري</h4>
                     <p class="text-muted">تم تصميم هيكل الوحدة بحيث يقلل قدر الإمكان من خطر جفاف النباتات. تساعد الخصائص الإسترطابية للمادة علي امتصاص الماء، والذي تتغذى عليه النباتات لاحقا، مع السماح في الوقت نفسه بوصول الهواء الي الجذور. ومع ذلك، لضمان الأداء السليم للجدار الأخضر، فإن وجود نظام ري مصَّمم بعناية  امرا أساسًيا.</p>
                     <p class="text-muted">في شركتنا، يتم تصميم نظام الري من الصفر، ويتضمن وحدة تحكم يمكن برمجتها بوظائف متقدمة، مثل تفريغ المياه تلقائًيا قبل موسم الشتاء. يبلغ القياس القياسي لصندوق التحكم 100 × 100 سم.</p>
                     <p class="text-muted">يتطلب موقع تركيب النظام توفر مصدر للمياه والطاقة، ويتضمن عادًة صمام ماء 4/3 بوصة ومأخذ كهربائي قياسي 16 أمبير.² لكل دورة ري.</p>
                   </div>
                 </div>
                 <div class="col-lg-4">
-                  <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.2s">
-                      <h3 class="section-title hvr-wobble-vertical">الخدمة والصيانة</h3>
+                  <div class="section-title-wrap mb-5 wow flipInX" data-wow-delay="0.2s">
+                      <h2 class="section-title hvr-wobble-vertical h4">الخدمة والصيانة</h2>
                   </div>
-                  <div class="wow fadeInUp" data-wow-delay="0.3s">
-                    <h4>يتطلب كل جدار أخضر حدا أدنى من الصيانة</h4>
+                  <div class="wow fadeInUp" data-wow-delay="0.4s">
+                    <h4 class="text-success ">يتطلب كل جدار أخضر حدا أدنى من الصيانة</h4>
                     <p class="text-muted">. ينصح بالتخطيط لإمكانية الوصول إلي الحديقة العمودية منذ مرحلة التصميم، ويفضل أن يتم ذلك عبر مصعد صيانة أو منصة واجهات المباني. كما يمكن أيضا استخدام الوصول بالحبال عند الحاجة. وكأفضل ممارسة، ينبغي أن تتم صيانة الجدار من ِقبل شركة متخّصصة قادرة علي مراقبة نظام الري وضمان العناية المناسبة بالنباتات. يضمن هذا النهج الحفاظ علي صحة الجدار الأخضر ومظهره الجمالي علي المدى الطويل.</p>
                   </div>
                 </div>
@@ -267,6 +276,7 @@
         <script>
           new WOW().init();
         </script>
+
         <script>
 			/**
 			 * Used to demonstrate Hover.css only. Not required when adding
@@ -296,5 +306,7 @@
 		  ga('create', 'UA-11991680-4', 'ianlunn.github.io');
 		  ga('send', 'pageview');
 		</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
     </body>
   </html>

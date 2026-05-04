@@ -19,11 +19,17 @@
 	      <link href="css/animate.css" rel="stylesheet" media="all">
     </head>
     <body class="d-flex flex-column">
+
+      <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+          <div class="spinner-border text-success" role="status" style="width: 3rem; height: 3rem;"></div>
+      </div>
+
         <main class="flex-shrink-0">
         <!-- Navigation-->
-          <nav class="navbar bg-body-tertiary fixed-top navbar-expand-lg bg-opacity-75 border-bottom">
-            <div class="container-fluid">
-              <a class="navbar-brand me-auto" href="index.html"><img class=" tranzitzone-logo ms-1"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></a>
+
+          <nav class="navbar bg-white fixed-top navbar-expand-lg border-bottom border m-3 rounded-4 shadow-sm">
+            <div class="container">
+              <a class="navbar-brand me-auto" href="index.html"><img class="tranzitzone-logo ms-1"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></a>
 
               <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header justify-content-between">
@@ -57,13 +63,12 @@
                   </ul>
                 </div>
               </div>
-              <a class="transit-project ms-2 hvr-pulse" href="portfolio-overview.html">المشاريع</a>
+              <a class="transit-project ms-2 rounded-5" href="portfolio-overview.html">المشاريع</a>
               <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
             </div>
           </nav>
-
         <!-- Header-->
             <header class="py-5 mt-5">
                 <div class="container py-5">
@@ -92,9 +97,9 @@
                 </div>
             </header>
 
-            <section class="py-5  bg-dark">
+            <section class="py-5"  style="background-color: #3b5d50;">
                 <div class="container py-5">
-                    <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.2s">
+                    <div class="section-title-wrap mb-5 wow flipInX" data-wow-delay="0.2s">
                         <h2 class="section-title  hvr-wobble-vertical">رسالتنا</h2>
                     </div>
                     <div class="row gx-5">
@@ -137,12 +142,12 @@
 
             <section class="py-5">
                 <div class="container my-5">
-                    <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.2s">
+                    <div class="section-title-wrap mb-5 wow flipInX" data-wow-delay="0.2s">
                         <h2 class="section-title  hvr-wobble-vertical">اهدافنا</h2>
                     </div>
                     <div class="row gx-5">
                       <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="custom-block custom-block-full text-center p-0 mb-5">
+                        <div class="custom-block custom-block-full bg-light text-center p-0 mb-5">
                             <img class="img-fluid bd-placeholder-img" src="img/goal.jpg" alt="..." />
                             <div class="custom-block-info custom-block-overlay-info">
                                 <p class="">تعكس أهداف شركة منطقة العبور للتجارية رؤيتها ورسالتها، وتسعي إلى تحقيق التميز والنجاح في مجال التجارة العامة في المملكة العربية السعودية.</p>
@@ -153,31 +158,31 @@
                         <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.4s">
                           <div class="row row-cols-1 row-cols-md-3">
                                 <div class="col h-100 mb-5  ">
-                                    <h2 class="fs-5">تلبية احتياجات العملاء</h2>
-                                    <p class="text-muted fs-6">توفير منتجات وخدمات تلبي توقعات واحتياجات العملاء بشكل مستدام وعالي الجودة</p>
+                                    <h2 class="text-success mb-3 fs-5">تلبية احتياجات العملاء</h2>
+                                    <p class="text-muted ">توفير منتجات وخدمات تلبي توقعات واحتياجات العملاء بشكل مستدام وعالي الجودة</p>
 
                                 </div>
                                   <div class="col h-100 mb-5  ">
-                                      <h2 class="fs-5">التميز والابتكار</h2>
-                                      <p class="text-muted fs-6">تطوير وتقديم منتجات وخدمات جديدة ومبتكرة تميز الشركة عن منافسيها وتضيف قيمة للسوق.</p>
+                                      <h2 class="text-success mb-3 fs-5">التميز والابتكار</h2>
+                                      <p class="text-muted ">تطوير وتقديم منتجات وخدمات جديدة ومبتكرة تميز الشركة عن منافسيها وتضيف قيمة للسوق.</p>
 
                                 </div>
                                   <div class="col h-100 mb-5  ">
-                                      <h2 class="fs-5">النمو والتوسع</h2>
-                                      <p class="text-muted fs-6">زيادة حصة الشركة في السوق والتوسع في مناطق جديدة داخل المملكة أو على الصعيد الدولي.</p>
+                                      <h2 class="text-success mb-3 fs-5">النمو والتوسع</h2>
+                                      <p class="text-muted ">زيادة حصة الشركة في السوق والتوسع في مناطق جديدة داخل المملكة أو على الصعيد الدولي.</p>
                                   </div>
                                   <div class="col mb-lg-5  ">
-                                      <h2 class="fs-5">الجودة والموثوقية</h2>
-                                      <p class="text-muted fs-6">الالتزام بمعايير الجودة العالية وضمان موثوقية المنتجات والخدمات المقدمة.</p>
+                                      <h2 class="text-success mb-3 fs-5">الجودة والموثوقية</h2>
+                                      <p class="text-muted ">الالتزام بمعايير الجودة العالية وضمان موثوقية المنتجات والخدمات المقدمة.</p>
                                   </div>
                                 <div class="col mb-lg-5 ">
-                                  <h2 class="fs-5">تطوير الموارد البشرية</h2>
-                                  <p class="text-muted fs-6">توظيف وتطوير أفضل المواهب والكفاءات المهنية، وتوفير فرص النمو والتدريب لهم.</p>
+                                  <h2 class="text-success mb-3 fs-5">تطوير الموارد البشرية</h2>
+                                  <p class="text-muted ">توظيف وتطوير أفضل المواهب والكفاءات المهنية، وتوفير فرص النمو والتدريب لهم.</p>
 
                                 </div>
                                 <div class="col mb-lg-5 ">
-                                  <h2 class="fs-5">الشراكة والتعاون</h2>
-                                  <p class="text-muted fs-6">بناء علاقات تعاون مستدامة مع العملاء والشركاء التجارين لتحقيق المصالح المشتركة.</p>
+                                  <h2 class="text-success mb-3 fs-5">الشراكة والتعاون</h2>
+                                  <p class="text-muted ">بناء علاقات تعاون مستدامة مع العملاء والشركاء التجارين لتحقيق المصالح المشتركة.</p>
 
                                 </div>
                               </div>
@@ -189,35 +194,35 @@
             <!-- Team members section-->
             <section class="py-5 bg-light">
                 <div class="container px-5 my-5">
-                    <div class="text-center wow fadeInUp" data-wow-delay="0.2s">
-                        <h2 class="fw-bolder">تعرف على فريقنا</h2>
-                        <p class="lead fw-normal text-muted mb-5">ملتزمون بالجودة ونجاحكم</p>
+                    <div class="row mb-5">
+                      <div class="col-md-12">
+                        <div class="text-center wow fadeInUp" data-wow-delay="0.2s">
+                            <h2 class="display-6 fw-semibold">تعرف على فريقنا</h2>
+                            <p class="fs-6 fw-normal text-muted mb-5">ملتزمون بالجودة ونجاحكم</p>
+                        </div>
+                      </div>
                     </div>
                     <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
                         <div class="col mb-5 mb-5 mb-xl-0  wow fadeInUp" data-wow-delay="0.3s">
                             <div class="text-center">
-                                <img class="custom-block img-fluid hvr-bob mb-4 p-3" src="img/sami.jpg" alt="sami" />
                                 <h5 class="fw-bolder">سامي بن محمد المحمد</h5>
                                 <div class="fst-italic text-muted">رئيس مجلس الادارة</div>
                             </div>
                         </div>
                         <div class="col mb-5 mb-5 mb-xl-0  wow fadeInUp" data-wow-delay="0.4s">
                             <div class="text-center">
-                                <img class="custom-block img-fluid hvr-bob mb-4 p-3" src="img/nizar.jpg" alt="nizar" />
                                 <h5 class="fw-bolder">م. نزار سليمان بابكر</h5>
                                 <div class="fst-italic text-muted">مدير العمليات وقسم سلاسل التوريدات</div>
                             </div>
                         </div>
                         <div class="col mb-5 mb-5 mb-sm-0 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="text-center">
-                                <img class="custom-block img-fluid hvr-bob mb-4 p-3" src="img/ahmed.jpg" alt="ahmed" />
                                 <h5 class="fw-bolder">م. احمد البدوي صلاح</h5>
                                 <div class="fst-italic text-muted">المدير الفني</div>
                             </div>
                         </div>
                         <div class="col mb-5 wow fadeInUp" data-wow-delay="0.6s">
                             <div class="text-center">
-                                <img class="custom-block img-fluid hvr-bob mb-4 px-3" src="img/abdu.jpg" alt="abdu" />
                                 <h5 class="fw-bolder">أ. عبدالرحمن الغامدي</h5>
                                 <div class="fst-italic text-muted">مدير إدارة الموارد البشرية</div>
                             </div>
@@ -282,5 +287,7 @@
         		  ga('create', 'UA-11991680-4', 'ianlunn.github.io');
         		  ga('send', 'pageview');
         		</script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script src="js/main.js"></script>
     </body>
 </html>

@@ -19,53 +19,60 @@
 	      <link href="css/animate.css" rel="stylesheet" media="all">
     </head>
     <body class="d-flex flex-column h-100">
+
+      <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+          <div class="spinner-border text-success" role="status" style="width: 3rem; height: 3rem;"></div>
+      </div>
+
       <main class="flex-shrink-0">
         <!-- Navigation-->
-          <nav class="navbar bg-body-tertiary fixed-top navbar-expand-lg bg-opacity-75 border-bottom">
-            <div class="container-fluid">
-              <a class="navbar-brand me-auto" href="index.html"><img class="tranzitzone-logo ms-sm-3 ms-1"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></a>
 
-              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header justify-content-between">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="tranzitzone-logo"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></h5>
+        <nav class="navbar bg-white fixed-top navbar-expand-lg border-bottom border m-3 rounded-4 shadow-sm">
+          <div class="container">
+            <a class="navbar-brand me-auto" href="index.html"><img class="tranzitzone-logo ms-1"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></a>
 
-                  <button type="button" class="" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header justify-content-between">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="tranzitzone-logo"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></h5>
 
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link mx-lg-2" aria-current="page" href="index.html">الرئيسية</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link active mx-lg-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        الخدمات
-                      </a>
-                      <ul class="dropdown-menu border-0 rounded-4 shadow px-2 py-3">
-                        <li><a class="dropdown-item my-1" href="service.html">محفظة الخدمات المتكاملة</a></li>
-                        <li><a class="dropdown-item my-1 active" href="disel-power.html">حلول الطاقة بالديزل</a></li>
-                        <li><a class="dropdown-item my-1" href="green-wall.html">الواجهات الخضرا</a></li>
-                        <li><a class="dropdown-item my-1" href="water.html">تنقية المياه والخدمات البيئية</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mx-lg-2" href="about.html">من نحن</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mx-lg-2" href="contact.html">اتصل بنا</a>
-                    </li>
-                  </ul>
-                </div>
+                <button type="button" class="" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+
               </div>
-              <a class="transit-project ms-2 hvr-pulse" href="portfolio-overview.html">المشاريع</a>
-              <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2" aria-current="page" href="index.html">الرئيسية</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active mx-lg-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      الخدمات
+                    </a>
+                    <ul class="dropdown-menu border-0 rounded-4 shadow px-2 py-3">
+                      <li><a class="dropdown-item my-1" href="service.html">محفظة الخدمات المتكاملة</a></li>
+                      <li><a class="dropdown-item my-1 active" href="disel-power.html">حلول الطاقة بالديزل</a></li>
+                      <li><a class="dropdown-item my-1" href="green-wall.html">الواجهات الخضرا</a></li>
+                      <li><a class="dropdown-item my-1" href="water.html">تنقية المياه والخدمات البيئية</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="about.html">من نحن</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="contact.html">اتصل بنا</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </nav>
+            <a class="transit-project ms-2 rounded-5" href="portfolio-overview.html">المشاريع</a>
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
 
-        <header class="py-5 mt-5">
-          <div class="container px-5">
+        <header class="py-5" style="background: #154839;
+background: linear-gradient(90deg,rgba(21, 72, 57, 1) 50%, rgba(253, 187, 45, 1) 50%)">
+          <div class="container px-5 py-5">
               <div class="row justify-content-center">
                   <div class="col-lg-7 col-xxl-6">
                       <div class="text-center my-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -74,22 +81,22 @@
                                 .Transit Zone Trading Co
                               </div>
                           </div>
-                          <h1 class="display-5 fw-semibold">حلول الطاقة بالديزل لشركة منطقة العبور</h1>
+                          <h1 class="display-5 fw-semibold text-white">حلول الطاقة بالديزل لشركة منطقة العبور</h1>
                       </div>
                   </div>
               </div>
           </div>
         </header>
-        <section class="pb-5 mb-5">
+        <section class="py-5 mb-5">
           <div class="container-fluid px-5">
             <div class="row gx-5 align-items-center">
               <div class="col-lg-12 col-12">
-                <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.1s">
-                    <h2 class="section-title hvr-wobble-vertical fs-5">نبذة عن الشركة</h2>
+                <div class="section-title-wrap mb-5 wow flipInX" data-wow-delay="0.1s">
+                    <h2 class="section-title hvr-wobble-vertical h4">نبذة عن الشركة</h2>
                 </div>
               </div>
               <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="custom-block custom-block-full mb-4">
+                <div class="custom-block custom-block-full bg-light mb-4">
                   <img class=" img-fluid rounded mb-5 mb-lg-0" src="img/15.jpeg" alt="...">
                 </div>
               </div>
@@ -112,8 +119,8 @@
             <div class="row gx-0">
               <div class="col-lg-6 bg-light py-5">
                 <div class=" px-5">
-                  <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.2s">
-                      <h3 class="hvr-wobble-vertical section-title"><i class="bi bi-bullseye px-2"></i> مهمتنا</h3>
+                  <div class="section-title-wrap mb-5 wow flipInX" data-wow-delay="0.2s">
+                      <h3 class="hvr-wobble-vertical h4 section-title"><i class="bi bi-bullseye px-2"></i> مهمتنا</h3>
                   </div>
                   <ol class="wow fadeInUp" data-wow-delay="0.2s">
                     <li class="fs-6 text-muted mb-3">توفير أنظمة مولدات ديزل عالية الموثوقية مصممة خصيصًا لتلبية متطلبات التشغيل في كل موقع.</li>
@@ -123,10 +130,10 @@
                   </ol>
                 </div>
               </div>
-                <div class="col-lg-6 bg-success py-5">
+                <div class="col-lg-6 py-5"  style="background-color: #3b5d50">
                   <div class=" px-5">
-                    <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.2s">
-                        <h2 class="hvr-wobble-vertical section-title"><i class="bi bi-eye-fill px-2"></i> رؤيتنا</h2>
+                    <div class="section-title-wrap mb-5 wow flipInX" data-wow-delay="0.2s">
+                        <h2 class="hvr-wobble-vertical h4 section-title"><i class="bi bi-eye-fill px-2"></i> رؤيتنا</h2>
                     </div>
                     <p class="text-white wow fadeInUp"data-wow-delay="0.3s">أن نكون مزودًا وطنيًا موثوقًا لأنظمة توليد الطاقة بالديزل، ندعم البنية التحتية والمشاريع الاستراتيجية في المملكة العربية السعودية من خلال حلول موثوقة ومتوافقة وسليمة تقنيًا.</p>
                   </div>
@@ -139,13 +146,13 @@
           <div class="container-fluid py-5 px-5">
             <div class="row gx-5">
               <div class="col-lg-12 col-12">
-                <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.2s">
-                    <h2 class="section-title  hvr-wobble-vertical fs-5">نطاق الخدمات</h2>
+                <div class="section-title-wrap mb-5 wow flipInX" data-wow-delay="0.2s">
+                    <h2 class="section-title  hvr-wobble-vertical h4 fs-5">نطاق الخدمات</h2>
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 mb-4 wow fadeInUp"  data-wow-delay="0.2s">
-                <div class="custom-block custom-block-full rounded">
-                  <h3 class="hvr-wobble-vertical fs-5">توريد مولدات الديزل</h3>
+                <div class="custom-block border">
+                  <h3 class="text-success fs-5">توريد مولدات الديزل</h3>
                   <ul class="mt-4">
                       <li class="text-muted">مجموعات مولدات الديزل (احتياطية، أساسية، تشغيل مستمر)</li>
                       <li class="text-muted">تكوينات الجهد المنخفض والمتوسط</li>
@@ -155,8 +162,8 @@
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="custom-block custom-block-full rounded">
-                  <h3 class="hvr-wobble-vertical fs-5">التشغيل والصيانة</h3>
+                <div class="custom-block border">
+                  <h3 class="text-success fs-5">التشغيل والصيانة</h3>
                   <ul class="mt-4">
                       <li class="text-muted">عقود الصيانة الوقائية</li>
                       <li class="text-muted">دعم الاستجابة التصحيحية والطارئة</li>
@@ -166,8 +173,8 @@
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="custom-block custom-block-full rounded">
-                  <h3 class="hvr-wobble-vertical fs-5">الهندسة والتصميم</h3>
+                <div class="custom-block border">
+                  <h3 class="text-success fs-5">الهندسة والتصميم</h3>
                   <ul class="mt-4">
                       <li class="text-muted">تقييم الأحمال وتحليل الطلب</li>
                       <li class="text-muted">تحديد حجم المولدات وفلسفة التكرار</li>
@@ -178,8 +185,8 @@
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="custom-block custom-block-full rounded">
-                  <h3 class="hvr-wobble-vertical fs-5">التركيب والتشغيل</h3>
+                <div class="custom-block border">
+                  <h3 class="text-success fs-5">التركيب والتشغيل</h3>
                   <ul class="mt-4">
                       <li class="text-muted">التركيبات الميكانيكية والكهربائية</li>
                       <li class="text-muted">دمج لوحة التحويل التلقائي ولوحة التزامن</li>
@@ -198,36 +205,36 @@
             <div class="row gx-0">
               <div class="col-lg-6 py-5">
                 <div class=" px-5">
-                  <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.2s">
-                      <h2 class="hvr-wobble-vertical section-title fs-4">القدرات الفنية</h2>
+                  <div class="section-title-wrap mb-5 wow flipInX" data-wow-delay="0.2s">
+                      <h2 class="hvr-wobble-vertical h4 section-title ">القدرات الفنية</h2>
                   </div>
                   <ul class="wow fadeInUp" data-wow-delay="0.2s">
-                    <li class="fs-6 text-muted mb-3">تنفيذ هندسي قائم على كوادر فنية مؤهلة</li>
-                    <li class="fs-6 text-muted mb-3">الامتثال لمعايير IEC وISO وNFPA وSASO ومتطلبات السلطات المحلية</li>
-                    <li class="fs-6 text-muted mb-3">الالتزام بمعايير أرامكو السعودية الهندسية (SAES) حيثما ينطبق ذلك</li>
-                    <li class="fs-6 text-muted mb-3">القدرة على تنفيذ محطات توليد الطاقة بالديزل، سواءً كانت وحدات منفردة أو متعددة الميغاواط</li>
-                    <li class="fs-6 text-muted mb-3">إجراءات تشغيل واستلام منظمة</li>
+                    <li class="text-muted mb-3">تنفيذ هندسي قائم على كوادر فنية مؤهلة</li>
+                    <li class="text-muted mb-3">الامتثال لمعايير IEC وISO وNFPA وSASO ومتطلبات السلطات المحلية</li>
+                    <li class="text-muted mb-3">الالتزام بمعايير أرامكو السعودية الهندسية (SAES) حيثما ينطبق ذلك</li>
+                    <li class="text-muted mb-3">القدرة على تنفيذ محطات توليد الطاقة بالديزل، سواءً كانت وحدات منفردة أو متعددة الميغاواط</li>
+                    <li class="text-muted mb-3">إجراءات تشغيل واستلام منظمة</li>
                   </ul>
                 </div>
               </div>
                 <div class="col-lg-6 py-5 border-right">
                   <div class="px-5">
-                    <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.2s">
-                        <h2 class="hvr-wobble-vertical section-title fs-4">الجودة والسلامة والامتثال</h2>
+                    <div class="section-title-wrap mb-5 wow flipInX" data-wow-delay="0.2s">
+                        <h2 class="hvr-wobble-vertical h4 section-title ">الجودة والسلامة والامتثال</h2>
                     </div>
                     <div  class="wow fadeInUp"  data-wow-delay="0.3s">
                     <p class="text-muted">تعمل شركة حلول الطاقة بالديزل في منطقة العبور ضمن إطار عمل مُحكم للجودة والسلامة، يتماشى مع:</p>
                     <ul class="">
-                      <li class="fs-6 text-muted mb-3">المتطلبات التنظيمية والقانونية السعودية</li>
-                      <li class="fs-6 text-muted mb-3">المواصفات الفنية الخاصة بالعميل (الحكومة السعودية / أرامكو / نيوم)</li>
-                      <li class="fs-6 text-muted mb-3">معايير التركيب والتشغيل الخاصة بالشركة المصنعة</li>
-                      <li class="fs-6 text-muted mb-3">أفضل الممارسات في مجال الصحة والسلامة والبيئة</li>
+                      <li class="text-muted mb-3">المتطلبات التنظيمية والقانونية السعودية</li>
+                      <li class="text-muted mb-3">المواصفات الفنية الخاصة بالعميل (الحكومة السعودية / أرامكو / نيوم)</li>
+                      <li class="text-muted mb-3">معايير التركيب والتشغيل الخاصة بالشركة المصنعة</li>
+                      <li class="text-muted mb-3">أفضل الممارسات في مجال الصحة والسلامة والبيئة</li>
                     </ul>
                     <p class="text-muted mt-5">يتم تنفيذ جميع الأعمال وفقًا لما يلي:</p>
                     <ul>
-                      <li class="fs-6 text-muted mb-3">خطط فحص واختبار موثقة</li>
-                      <li class="fs-6 text-muted mb-3">بيانات الأساليب وتقييمات المخاطر</li>
-                      <li class="fs-6 text-muted mb-3">تسليم مُحكم ووثائق التنفيذ النهائي</li>
+                      <li class="text-muted mb-3">خطط فحص واختبار موثقة</li>
+                      <li class="text-muted mb-3">بيانات الأساليب وتقييمات المخاطر</li>
+                      <li class="text-muted mb-3">تسليم مُحكم ووثائق التنفيذ النهائي</li>
                     </ul>
                   </div>
                   </div>
@@ -237,35 +244,35 @@
         </section>
 
         <section class="my-5">
-          <div class="container px-4">
-            <div class="row gx-5">
+          <div class="container-fluid">
+            <div class="row gx-0">
               <div class="col-lg-6 py-5">
                 <div class=" px-5">
-                  <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.2s">
-                      <h2 class="hvr-wobble-vertical section-title fs-4">التطبيقات وحالات الاستخدام</h2>
+                  <div class="section-title-wrap mb-5 wow flipInX" data-wow-delay="0.2s">
+                      <h2 class="hvr-wobble-vertical h4 section-title ">التطبيقات وحالات الاستخدام</h2>
                   </div>
                   <ul  class="wow fadeInUp" data-wow-delay="0.3s">
-                    <li class="fs-6 text-muted mb-3">المباني والمنشآت الحكومية</li>
-                    <li class="fs-6 text-muted mb-3">منشآت النفط والغاز</li>
-                    <li class="fs-6 text-muted mb-3">المصانع والمنشآت الصناعية</li>
-                    <li class="fs-6 text-muted mb-3">المستشفيات ومرافق الرعاية الصحية</li>
-                    <li class="fs-6 text-muted mb-3">مشاريع البنية التحتية والمرافق العامة</li>
-                    <li class="fs-6 text-muted mb-3">مواقع الإنشاءات ومواقع توليد الطاقة المؤقتة</li>
+                    <li class="text-muted mb-3">المباني والمنشآت الحكومية</li>
+                    <li class="text-muted mb-3">منشآت النفط والغاز</li>
+                    <li class="text-muted mb-3">المصانع والمنشآت الصناعية</li>
+                    <li class="text-muted mb-3">المستشفيات ومرافق الرعاية الصحية</li>
+                    <li class="text-muted mb-3">مشاريع البنية التحتية والمرافق العامة</li>
+                    <li class="text-muted mb-3">مواقع الإنشاءات ومواقع توليد الطاقة المؤقتة</li>
                   </ul>
                 </div>
               </div>
                 <div class="col-lg-6 py-5">
                   <div class=" px-5">
-                    <div class="section-title-wrap mb-5 wow rubberBand" data-wow-delay="0.2s">
-                        <h2 class=" hvr-wobble-vertical section-title fs-4">نقاط القوة التنافسية</h2>
+                    <div class="section-title-wrap mb-5 wow flipInX" data-wow-delay="0.2s">
+                        <h2 class=" hvr-wobble-vertical h4 section-title ">نقاط القوة التنافسية</h2>
                     </div>
                     <ul  class="wow fadeInUp"  data-wow-delay="0.3s">
-                      <li class="fs-6 text-muted mb-3">نقاط القوة التنافسية</li>
-                      <li class="fs-6 text-muted mb-3">تخصص دقيق في مولدات الديزل فقط</li>
-                      <li class="fs-6 text-muted mb-3">فهم عميق لمتطلبات المناقصات والامتثال في المملكة العربية السعودية</li>
-                      <li class="fs-6 text-muted mb-3">نهج هندسي قائم على التوريد بدلاً من التوريد التجاري فقط</li>
-                      <li class="fs-6 text-muted mb-3">دعم فني سريع الاستجابة وتعبئة فورية</li>
-                      <li class="fs-6 text-muted mb-3">إمكانية التكامل مع خدمات منطقة العبور الأوسع نطاقاً</li>
+                      <li class="text-muted mb-3">نقاط القوة التنافسية</li>
+                      <li class="text-muted mb-3">تخصص دقيق في مولدات الديزل فقط</li>
+                      <li class="text-muted mb-3">فهم عميق لمتطلبات المناقصات والامتثال في المملكة العربية السعودية</li>
+                      <li class="text-muted mb-3">نهج هندسي قائم على التوريد بدلاً من التوريد التجاري فقط</li>
+                      <li class="text-muted mb-3">دعم فني سريع الاستجابة وتعبئة فورية</li>
+                      <li class="text-muted mb-3">إمكانية التكامل مع خدمات منطقة العبور الأوسع نطاقاً</li>
                     </ul>
                    </div>
                 </div>
@@ -329,5 +336,7 @@
 		  ga('create', 'UA-11991680-4', 'ianlunn.github.io');
 		  ga('send', 'pageview');
 		</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

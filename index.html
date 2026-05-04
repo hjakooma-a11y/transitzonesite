@@ -22,10 +22,15 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100">
+
+      <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+          <div class="spinner-border text-success" role="status" style="width: 3rem; height: 3rem;"></div>
+      </div>
+
       <main class="flex-shrink-0">
 
-      <nav class="navbar bg-body-tertiary fixed-top navbar-expand-lg bg-opacity-75 border-bottom">
-        <div class="container-fluid">
+      <nav class="navbar bg-white fixed-top navbar-expand-lg border-bottom border m-3 rounded-4 shadow-sm">
+        <div class="container">
           <a class="navbar-brand me-auto" href="index.html"><img class="tranzitzone-logo ms-1"  src="img/transitZoneLogo.png" alt="Transitzone Logo"></a>
 
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -60,20 +65,21 @@
               </ul>
             </div>
           </div>
-          <a class="transit-project ms-2 hvr-pulse" href="portfolio-overview.html">المشاريع</a>
+          <a class="transit-project ms-2 rounded-5" href="portfolio-overview.html">المشاريع</a>
           <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
       </nav>
 
-        <header class="bg-white py-5">
-          <div class="container px-5 pt-5">
-            <div class="row gx-5 justify-content-center">
+        <header class=" py-5" style="background: #154839;
+background: linear-gradient(180deg,rgba(21, 72, 57, 1) 0%, rgba(253, 187, 45, 1) 100%);">
+          <div class="container px-5 pt-5 text-white">
+            <div class="row gx-5 justify-content-center" style="">
                 <div class="col-lg-10">
                     <div class="text-center my-5">
-                        <h1 class="display-5 fw-bolder mb-4 wow fadeInDown">شركة <span class="text-success">منطقة العبور للتجارة </span>شركة سعودية رائدة في مجال التجارة العامة.</h1>
-                        <p class=" mb-4 text- wow fadeInUp">شركة منطقة العبور للتجارة هي شركة سعودية رائدة في مجال التجارة العامة. تأسست الشركة بهدف تلبية احتياجات السوق السعودي من خلال تقديم منتجات وخدمات عالية الجودة للعملاء. وتعمل الشركة في قطاعات متنوعة.</p>
+                        <h1 class="display-5 fw-bolder mb-4 wow fadeInDown">شركة <span style="color: #FDBB2D">منطقة العبور للتجارة </span>شركة سعودية رائدة في مجال التجارة العامة.</h1>
+                        <p class=" mb-4 wow fadeInUp">شركة منطقة العبور للتجارة هي شركة سعودية رائدة في مجال التجارة العامة. تأسست الشركة بهدف تلبية احتياجات السوق السعودي من خلال تقديم منتجات وخدمات عالية الجودة للعملاء. وتعمل الشركة في قطاعات متنوعة.</p>
                     </div>
                 </div>
             </div>
@@ -81,25 +87,25 @@
             				<div class="col-4 col-sm-4 col-md-4 col-lg-2">
             					<div class="counter-wrap">
             						<div class="counter">
-            							<span style="font-family: Arial !important" data-number="10">10</span>
+            							<span class=" text-white" style="font-family: Arial !important" data-number="10">10</span>
             						</div>
-            						<span class="caption fw-normal">المشاريع</span>
+            						<span class="caption fw-normal  text-white">المشاريع</span>
             					</div>
             				</div>
             				<div class="col-4 col-sm-4 col-md-4 col-lg-2 ">
             					<div class="counter-wrap">
             						<div class="counter">
-            							<span style="font-family: Arial !important" data-number="95">95%</span>
+            							<span class=" text-white" style="font-family: Arial !important" data-number="95">95%</span>
             						</div>
-            						<span class="caption fw-normal">رضاء العملاء</span>
+            						<span class="text-white caption fw-normal">رضاء العملاء</span>
             					</div>
             				</div>
             				<div class="col-4 col-sm-4 col-md-4 col-lg-2">
             					<div class="counter-wrap">
             						<div class="counter">
-            							<span style="font-family: Arial !important" data-number="3">3+</span>
+            							<span class=" text-white" style="font-family: Arial !important" data-number="3">3+</span>
             						</div>
-            						<span class="caption fw-normal"> سنوات الخبره </span>
+            						<span class="text-white caption fw-normal"> سنوات الخبره </span>
             					</div>
             				</div>
             </div>
@@ -109,37 +115,37 @@
           <div class="container  py-5">
             <div class="row gx-5">
                 <div class="col-lg-4 mb-5 mb-lg-0">
-                  <h2 class="fw-bolder mb-5 fs-1 text-left wow fadeInUp" data-wow-delay="0.1s">اهداف شركة منطقة العبور للتجارة</h2>
+                  <h2 class="fw-bolder mb-5 h2 text-left wow fadeInUp" data-wow-delay="0.1s">اهداف شركة منطقة العبور للتجارة</h2>
                 </div>
                 <div class="col-lg-8">
                     <div class="row gx-5 row-cols-1 row-cols-md-2">
-                        <div class="col mb-5 hvr-rotate wow fadeInUp" data-wow-delay="0.2s">
-                          <div class="custom-block">
-                              <div class="text-dark display-5 mb-3"><i class="bi bi-person-arms-up hvr-wobble-top"></i></div>
-                              <h3 class="h5">تلبية احتياجات العملاء</h3>
-                              <p class="mb-0 text-muted">تقديم منتجات وخدمات تلبي توقعات العملاء واحتياجاتهم بشكل مستدام وعالي الجودة.</p>
+                        <div class="col mb-3 wow fadeInUp" data-wow-delay="0.2s">
+                          <div class="custom-block border-0" style="">
+                            <div class="display-5 mb-3"><i class="bi bi-person-arms-up hvr-wobble-top"></i></div>
+                            <h3 class="h5 my-3 text-success">تلبية احتياجات العملاء</h3>
+                            <p class="mb-0 text-muted">تقديم منتجات وخدمات تلبي توقعات العملاء واحتياجاتهم بشكل مستدام وعالي الجودة.</p>
                           </div>
                           </div>
-                        <div class="col mb-5 hvr-rotate  wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="custom-block custom-block-full">
-                              <div class="text-dark display-5 mb-3"><i class="bi bi-lightbulb hvr-pulse-grow"></i></div>
-                              <h3 class="h5">التميز والابتكار</h3>
-                              <p class="mb-0 text-muted">تطوير وتقديم منتجات وخدمات جديدة ومبتكرة تميز الشركة عن منافسيها وتضيف قيمة إلى السوق.</p>
+                        <div class="col mb-3  wow fadeInUp" data-wow-delay="0.3s">
+                          <div class="custom-block border-0" style="">
+                            <div class="text-dark display-5 mb-3"><i class="bi bi-lightbulb hvr-pulse-grow"></i></div>
+                            <h3 class="h5 my-3  text-success">التميز والابتكار</h3>
+                            <p class="mb-0 text-muted">تطوير وتقديم منتجات وخدمات جديدة ومبتكرة تميز الشركة عن منافسيها وتضيف قيمة إلى السوق.</p>
                           </div>
                         </div>
-                        <div class="col mb-5 mb-md-0 hvr-rotate wow fadeInUp"  data-wow-delay="0.4s">
-                            <div class="custom-block  custom-block-full">
+                        <div class="col mb-3 mb-md-0 wow fadeInUp"  data-wow-delay="0.4s">
+                            <div class="custom-block border-0" style="">
                               <div class="text-dark display-5 mb-3"><i class="bi bi-graph-up-arrow hvr-bounce-in"></i></div>
-                              <h3 class="h5">النمو والتوسع</h3>
+                              <h3 class="h5 my-3 text-success">النمو والتوسع</h3>
                               <p class="mb-0 text-muted">زيادة الحصة السوقية للشركة والتوسع في مجالات ومجالات جديدة داخل المملكة أو على الصعيد الدولي.</p>
                           </div>
                         </div>
 
-                        <div class="col mb-5 mb-md-0 hvr-rotate wow fadeInUp"  data-wow-delay="0.5s">
-                          <div class="custom-block">
+                        <div class="col mb-3 mb-md-0 wow fadeInUp"  data-wow-delay="0.5s">
+                          <div class="custom-block border-0" style="">
                             <div class="">
                               <div class="text-dark display-5 mb-3"><i class="bi bi-hand-thumbs-up hvr-skew-backward"></i></div>
-                              <h3 class="h5">الجودة والموثوقية</h3>
+                              <h3 class="h5 my-3 text-success">الجودة والموثوقية</h3>
                               <p class="mb-0 text-muted">الالتزام بمطالبات وبمعايير الجودة العالية وضمان موثوقية المنتجات والخدمات المقدمة.</p>
                             </div>
                           </div>
@@ -150,19 +156,18 @@
           </div>
         </section>
         <!-- Testimonial section-->
-        <div class="py-5 text-white wow fadeInUp" data-wow-delay="0.1s" style="background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);">  <!--bg-success bg-gradient -->
+        <div class="py-5 text-white" style="background-color: #3b5d50">  <!--bg-success bg-gradient -->
             <div class="container my-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-10 col-xl-9">
                         <div class="text-center">
                             <div class="fs-3 mb-4 fst-italic wow fadeInUp" data-wow-delay="0.4s">"تعكس أهداف شركة منطقة العبور التجارية رؤيتها ورسالتها، التي تهدف إلى تحقيق التميز والنجاح في مجال التجارة العامة في المملكة العربية السعودية."</div>
                             <div class="d-flex align-items-center justify-content-center  wow fadeInUp" data-wow-delay="0.6s">
-                                <img class="rounded-circle me-3" src="img/sami.jpg" alt="..." />
-                                <div class="fw-bold wow headShake">
+                                <p class="fw-bold wow headShake">
                                     سامي بن محمد المحمد
-                                    <span class="fw-bold text-primary mx-1">/</span>
+                                    <span class="fw-bold  mx-1">/</span>
                                     رئيس مجلس الإدارة
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -175,7 +180,7 @@
             <div class="row  gx-0 mb-5">
               <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
                   <div class="section-title-wrap mb-5">
-                      <h2 class="section-title hvr-wobble-vertical">مشاريع شركة منطة العبور للتجارة</h2>
+                      <h2 class="section-title hvr-wobble-vertical h4">مشاريع شركة منطة العبور للتجارة</h2>
                   </div>
               </div>
             </div>
@@ -294,10 +299,10 @@
           </div>
         </section>
 
-          <section class="py-5  bg-light wow fadeInUp" data-wow-delay="0.1s">
+          <section class="py-5  bg-light">
             <div class="container my-5">
                 <div class="row gx-5 mb-5">
-                  <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="col-lg-12 wow flipInX" data-wow-delay="0.3s">
                       <div class="section-title-wrap mb-5">
                           <h2 class="section-title hvr-wobble-vertical">اعمالنا</h2>
                       </div>
@@ -305,23 +310,23 @@
                 </div>
                 <div class="row gx-5">
                   <div class="col-lg-3 col-md-4">
-                    <div class="mb-5 custom-block-full wow fadeInUp" data-wow-delay="0.3s">
-                      <p class="custom-block">اعمال التشطيبات</p>
+                    <div class="mb-5 wow fadeInUp" data-wow-delay="0.3s">
+                      <p class="custom-block h5 border-0">اعمال التشطيبات</p>
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-4">
-                    <div class="mb-5 custom-block-full wow fadeInDown" data-wow-delay="0.5s">
-                    <p class="custom-block">توفير عمالة</p>
+                    <div class="mb-5 wow fadeInDown" data-wow-delay="0.5s">
+                    <p class="custom-block h5 border-0">توفير عمالة</p>
                   </div>
                   </div>
                   <div class="col-lg-3 col-md-4">
-                    <div class="mb-5 custom-block-full wow fadeInUp" data-wow-delay="0.6s">
-                    <p class="custom-block">تاجير المعدات</p>
+                    <div class="mb-5 wow fadeInUp" data-wow-delay="0.6s">
+                    <p class="custom-block h5 border-0">تاجير المعدات</p>
                   </div>
                   </div>
                   <div class="col-lg-3 col-md-4">
-                    <div class="mb-5 custom-block-full wow fadeInDown" data-wow-delay="0.7s">
-                    <p class="custom-block">اعمال النظافة</p>
+                    <div class="mb-5 wow fadeInDown" data-wow-delay="0.7s">
+                    <p class="custom-block h5 border-0">اعمال النظافة</p>
                   </div>
                   </div>
               </div>
@@ -401,5 +406,7 @@
 	  ga('create', 'UA-11991680-4', 'ianlunn.github.io');
 	  ga('send', 'pageview');
 	</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
   </body>
 </html>
