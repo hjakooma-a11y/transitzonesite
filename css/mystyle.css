@@ -1,22 +1,52 @@
 
+.cairo-<uniquifier> {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  color: #6a6a6a !important;
+  font-size: 14px;
+  background-color: #eff2f1;
+}
 .tranzitzone-logo {
-  max-width: 100px;
+  max-width: 65px;
   width: 100%;
 }
 
 .transit-project {
   color: #198754;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14px;
   padding: 6px 18px;
   border-radius: 8px;
   text-decoration: none;
   transition: all 0.3s ease-out;
-  border: solid #198754 2px;
+  border: solid #3b5d50 2px;
 }
 .transit-project:hover {
-  background-color: #198754;
-  border: solid #198754 2px;
+  background-color: #3b5d50;
+  border: solid #3b5d50 2px;
   color: #fff;
 }
 .offcanvas-header button{
@@ -36,7 +66,7 @@
 
 .nav-link {
   color: #666777;
-  font-weight: 600;
+  font-weight: 700;
   position: relative;
 }
 .nav-link:hover, .nav-link.active{
@@ -56,11 +86,25 @@
     visibility: hidden;
     transition: 0.3s ease-in-out;
 
-  }
-  .nav-link:hover::before, .nav-link.active::before{
-    width: 100%;
-    visibility: visible;
-  }
+    }
+    .nav-link:hover::before, .nav-link.active::before{
+      width: 100%;
+      visibility: visible;
+    }
+    .dropdown>.dropdown-menu{
+      visibility: hidden;
+      opacity: 0;
+      to: 100%;
+      display: block;
+      transition: all 0.1s ease-out;
+    }
+    .dropdown:hover>.dropdown-menu{
+
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+    }
 
 }
 .dropdown>.dropdown-menu li a:hover, .dropdown>.dropdown-menu li a.active{
@@ -71,7 +115,6 @@
 
 /* Filter image */
 .box-menu{
-  text-align: center;
 }
 .box-menu ul{
   text-align: center;
@@ -80,64 +123,25 @@
   list-style: none;
 }
 .box-menu ul li{
+  color: #6a6a6a;
   text-transform: uppercase;
   border-radius: 8px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
-  background-color: #00CC99;
+  background-color: #FFF;
   padding: 8px 16px;
   display: inline-block;
-  border: 2px solid #00CC99;
+  border: 2px solid #FFF;
+  margin: 0 4px;
 }
 .box-menu ul li.mixitup-control-active{
   background-color: #fff;
-
-  border: 2px solid #00CC99;
+  color: #000;
+  border: 2px solid #3b5d50;
 }
-
-/* .dropdown>.dropdown-menu{
-    background-color: red;
-    border: 0;
-    border-radius:  0;
-}
-.bi-x-lg{
-  font-size: 2rem;
-}
-
-@media (min-width:992px) {
-    .dropdown>.dropdown-menu{
-      visibility: visible;
-      opacity: 0;
-      to: 100%;
-      display: block;
-      transition: all 0.1s ease-out;
-    }
-    .dropdown:hover>.dropdown-menu{
-        padding: 20px 0;
-        display: block;
-        visibility: visible;
-        opacity: 1;
-        transition: all 0.3s ease-in-out;
-    }
-}
-.dropdown-item:hover{
-  color: #FFF;
-  background-color: #000;
-} */
-
-
-.cairo-<uniquifier> {
-  font-family: "Cairo", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-}
-
-* { font-family: "Cairo" !important; }
-.tgreen{style="background-color: #154839;"}
+.tgreen{background-color: #154839;}
+.text-transit{text-color: #154839;}
 /* Hero stats */
 .ve-hero-stats { display:flex; align-items:center; gap:24px; }
 .ve-stat strong { display:block; font-size:28px; color:#fff; font-family:'Nunito',sans-serif; font-weight:900; }
@@ -218,7 +222,7 @@
               -----------------------------------------*/
               :root {
                 --white-color:                  #ffffff;
-                --primary-color:                #00CC99;
+                --primary-color:                #3b5d50; /* #00CC99; */
                 --secondary-color:              #0066CC;
                 --section-bg-color:             #f0f8ff;
                 --custom-btn-bg-color:          #0066CC;
@@ -252,7 +256,7 @@
 
               .section-title-wrap::after {
                 content: "";
-                background: var(--section-bg-color);
+                background: #fff;
                 width: 100%;
                 height: 2px;
                 position: absolute;
@@ -263,7 +267,7 @@
               }
 
               .section-title {
-                background: var(--section-bg-color);
+                background: #fff;
                 border-radius: var(--border-radius-large);
                 display: inline-block;
                 position: relative;
