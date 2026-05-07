@@ -120,19 +120,24 @@ body {
       width: 100%;
       visibility: visible;
     }
-    .dropdown>.dropdown-menu{
+    .dropdown>.dropdown-menu, .dropend>.dropdown-menu{
       visibility: hidden;
       opacity: 0;
       to: 100%;
       display: block;
       transition: all 0.1s ease-out;
     }
-    .dropdown:hover>.dropdown-menu{
+    .dropdown:hover>.dropdown-menu, .dropend:hover>.dropdown-menu{
 
         display: block;
         visibility: visible;
         opacity: 1;
         transition: all 0.3s ease-in-out;
+    }
+    .dropend>.dropdown-menu{
+      position: absolute;
+      top: 0;
+      right: 100%;
     }
 
 }
