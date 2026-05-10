@@ -364,7 +364,7 @@ body {
                 border-radius: var(--border-radius-medium);
                 position: relative;
                 overflow: hidden;
-                padding: 8px;
+                padding: 16px;
                 transition: all 0.3s ease;
               }
 
